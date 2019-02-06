@@ -5,7 +5,18 @@
       <title>Interview in HTML</title>
       <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="../css/interview.css">
+      <link rel="stylesheet" type="text/css" href="../css/interview2.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          $('#toc a').click(function(){
+              $('html, body').animate({
+                  scrollTop: $( $(this).attr('href') ).offset().top
+              }, 500);
+              return false;
+          });
+        });
+      </script>
   </head>
 
 
@@ -18,7 +29,7 @@
     <h2>Graphic Design major, an international student from China, CCA sophomore</h2>
     <figure>
       <img src="Li.jpeg" alt=""><br><br>
-      <figcaption>Retrieved from Yixun Li</figcaption>
+      <figcaption>fweopfjdspfejfpjs</figcaption>
     </figure>
 
 
@@ -26,7 +37,7 @@
     <br><br><h2 id="C2">Question</h2>
     <p>As a graphic design major student, knowing the importance of coding, Yixun Li answers about web design and the internet.</p>
 
-    <br><span class="highlight">
+    <span class="highlight">
       <strong>1. What is ‘good’ screen-based design?</strong><br>
     </span>
 

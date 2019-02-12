@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+}
+
+header{
+  border-bottom: 1px #1c1c1c;
+  padding: 20px;
+  padding-left: 120px;
+  background-color: red;
+  /* background-color: #1c1c1c; */
+}
+.container{
+  width: 170px;
+  margin: 10px auto;
+  padding: 5px;
+}
+#home{
+  position: absolute;
+  right: 140px;
+  top: 40px;
+}
+#contentNav{
+  position: fixed;
+  left: 10px;
+  top: 200px;
+}

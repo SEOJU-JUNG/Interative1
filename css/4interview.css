@@ -1,0 +1,110 @@
+
+body {
+
+  background-color: #2963b3;
+
+  /* The above is called a hex code.
+     There are two other ways to do colors in CSS: rgb and common names */
+  color: white;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  /* font-family: "Arial", Helvetica, sans-serif; */
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  /* I put "max-width" rather than "width" because
+     if the screen width is less than 650px, it will shrink accordingly. */
+}
+
+
+#toc {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: white;
+  /* that means you'll have to change the color of the text */
+  color: red;
+  /* some padding might make it look better */
+  padding: 1em;
+  /* maybe making the font size here smaller will help too */
+  font-size: 0.7em;
+}
+
+}
+a {
+  color: white;
+  text-decoration: none;
+  /* By default, links are blue and have an underline.
+     The above CSS changes both those things. */
+}
+
+a:hover {
+  color: yellow;
+}
+
+
+#toc ul {
+  padding: 1em;
+  list-style-type: circle;
+  color: #2963b3
+  /* you could also change the type of bullet with the above declaration! */
+}
+
+
+figure {
+  margin-left: 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+figcaption {
+  font-size: 0.7em;
+  margin-top: -20px;
+}
+
+.highlight {
+background-color: rgba(28, 69, 125, 0.7);
+
+}
+strong{
+  color: white;
+}
+
+
+h1 {
+  /* here I'm making the title not bold (by default headings are always bold)
+     centered, larger, tighter leading, and with some bottom space or margin */
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.1;
+  margin-bottom: 1.5em;
+}
+
+
+
+}
+
+h2 {
+  /* here I'm making my section headers very obvious with a white background.
+     added some padding and removed the default bold again, and
+     added some top margin */
+  padding: 0.2em;
+  font-weight: bold;
+  color: #1c457d;
+  margin-top: 2em;
+}
+
+.box {
+
+  background: rgba(16, 29, 107, 0.5);
+
+
+}
+
+img {
+  max-width: 350px;
+}

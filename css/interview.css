@@ -1,109 +1,134 @@
-
-body {
-
-  background-color: #2963b3;
-  /* The above is called a hex code.
-     There are two other ways to do colors in CSS: rgb and common names */
-  color: white;
-  font-size: 18px;
+body{
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   /* font-family: "Arial", Helvetica, sans-serif; */
   font-family: 'Nanum Gothic', sans-serif;
+  font-size: 23px;
+  color:#1e1e1e;
+
+}
+
+header{
+  text-align: center;
+/* padding-left: 330px; */
+/* border: #1e1e1e; */
+/* background-color: #1e1e1e; */
+
+
+  }
+
+h5 a{
+  padding: 20px;
+  color: #999999;
+  text-decoration: none;
+}
+h5 a:hover{
+  color:#1e1e1e;
+}
+
+#h5Nav a{
+  color: #1e1e1e;
+}
+#h5Nav a:hover{
+  color: #0000ff;
+}
+
+#title{
+  margin: auto;
+  padding: 40px;
+  color: #999999;
+  /* padding-bottom: 50px; */
+  /* padding-top: 30px; */
+  font-size: 65px;
+  /* margin: 0 auto; */
+  text-align: center;
+  /* background-color: #999999; */
+  background-color: #1e1e1e;
+
+  font-weight: 600;
+
+
 }
 
 .container {
-  max-width: 750px;
-  margin: 0 auto;
-  /* I put "max-width" rather than "width" because
-     if the screen width is less than 650px, it will shrink accordingly. */
+  width: 600px;
+  margin: 10px auto;
+
+  align-content: center;
+
 }
 
+#name{
+  color: #1aafac;
 
-#toc {
+    text-align: center;
+    font-weight:720;
+    /* border: 1px red solid; */
+}
+
+#contantNav{
+  color: #1e1e1e;
+
   position: fixed;
-  top: 1em;
-  left: 1em;
-  background-color: white;
-  /* that means you'll have to change the color of the text */
-  color: red;
-  /* some padding might make it look better */
-  padding: 1em;
-  /* maybe making the font size here smaller will help too */
-  font-size: 0.7em;
+padding: 120px;
+margin: auto 50px;
 }
 
+
+h6 {
+  font-style: italic;
+  font-size: x-small;
+  padding-left: 65px
 }
-a {
-  color: #2963b3;
+
+figure{
+  color: #1e1e1e;
+  padding-left:  10px;
+}
+
+.concon{
+    /* font-stretch: ultra-condensed; */
+  font-size: 21px;
+
+  width: 700px;
+  margin: 10px auto;
+  align-content: center;
+  line-height: 1.6em;
+  /* text-overflow: ellipsis; */
+
+}
+
+
+.italic{
+  font-style: italic;
+}
+
+
+#question1{
+  font-weight: 700;
+  margin-bottom: -15px;
+}
+
+
+a{
   text-decoration: none;
-  /* By default, links are blue and have an underline.
-     The above CSS changes both those things. */
+  color: #1e1e1e;
 }
 
-a:hover {
-  color: yellow;
+#refer1 {
+
+  font-weight: 800;
 }
 
+#refer1:hover{
 
-#toc ul {
-  padding: 1em;
-  list-style-type: circle;
-  color: #2963b3
-  /* you could also change the type of bullet with the above declaration! */
+  color: #00ff00;
 }
 
-
-figure {
-  margin-left: 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
+#refer2{
+  font-weight: 800;
 }
 
-figcaption {
-  font-size: 0.7em;
-  margin-top: -20px;
-}
-
-.highlight {
-background-color: rgba(28, 69, 125, 0.7);
-
-}
-strong{
-  color: white;
-}
-
-
-h1 {
-  /* here I'm making the title not bold (by default headings are always bold)
-     centered, larger, tighter leading, and with some bottom space or margin */
-  font-weight: bold;
-  text-align: center;
-  font-size: 2em;
-  line-height: 1.1;
-  margin-bottom: 1.5em;
-}
-
-
-
-}
-
-h2 {
-  /* here I'm making my section headers very obvious with a white background.
-     added some padding and removed the default bold again, and
-     added some top margin */
-  padding: 0.2em;
-  font-weight: bold;
-  color: #1c457d;
-  margin-top: 2em;
-}
-
-.box {
-
-  background: rgba(16, 29, 107, 0.5);
-
-
-}
-
-img {
-  max-width: 350px;
+#refer2:hover{
+  color: #00ff00;
 }

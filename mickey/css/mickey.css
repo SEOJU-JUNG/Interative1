@@ -1,0 +1,197 @@
+
+/* reset styles */
+* { margin: 0px; padding: 0px; }
+
+/* make the background of the page black */
+body { background: black;}
+
+img{
+  position: relative;
+  z-index: -99;
+
+}
+
+
+/* mickey canvas */
+  #canvas {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  background: white;
+  z-index: -9
+}
+
+/* shapes */
+/* make all divs inside of #canvas a circle */
+#canvas div{
+  border-radius: 200px;
+  position: absolute;
+}
+
+/*
+adjust the top and left
+properties of the elements
+to position them
+*/
+
+#ear-1 {
+
+  width: 107px;
+  height: 107px;
+  background: black;
+  top:100px;
+  left:20px;
+
+  /* try uncommenting the following code
+  top: 100px;
+  left: 20px;
+  */
+}
+
+#ear-2 {
+  width: 107px;
+  height: 107px;
+  background: black;
+  left: 120px;
+      top: 5px;
+}
+
+#head {
+  width: 140px;
+  height: 140px;
+  background: #fbe5d8;
+  top: 120px;
+ left: 130px;
+
+}
+
+#head2 {
+  width: 150px;
+    height: 150px;
+    background: black;
+    top: 103px;
+    left: 119px;
+    z-index: -1;
+}
+
+#eye-1 {
+  width: 25px;
+  height: 25px;
+  background: black;
+  top: 160px;
+  left: 180px;
+  z-index: +2
+}
+
+#eye-11 {
+  width: 25px;
+height: 32px;
+background: white;
+top: 155px;
+left: 180px;
+z-index: +1
+
+
+}
+
+#eye-2 {
+  width: 25px;
+  height: 32px;
+  background: white;
+  top: 155px;
+  left: 220px;
+
+}
+
+#eye-22 {
+  width: 25px;
+  height: 25px;
+  background: black;
+  top: 160px;
+  left: 220px;
+}
+
+#nose {
+  width: 45px;
+  height: 45px;
+  background: black;
+  top: 180px;
+left: 260px;
+}
+
+#mouth {
+  width: 35px;
+  height: 35px;
+  background: #d83333;
+  top: 220px;
+left: 170px;
+}
+
+#body {
+  width: 160px;
+  height: 160px;
+  background: #d83333;
+  top: 260px;
+    left: 190px;
+}
+
+#body-2 {
+  width: 160px;
+height: 156px;
+background: black;
+top: 247px;
+left: 184px;
+z-index: -1;
+}
+
+#button-1 {
+  width: 32px;
+  height: 32px;
+  background: white;
+  top: 320px;
+  left: 260px;
+}
+
+#button-2 {
+  width: 32px;
+  height: 32px;
+  background: white;
+  top: 310px;
+left: 300px;
+}
+
+#foot-1 {
+  width: 150px;
+  height: 150px;
+  background: #f6d643;
+  top: 404px;
+    left: 88px;
+
+}
+
+#foot-2 {
+  width: 150px;
+  height: 150px;
+  background: #f6d643;
+  top: 440px;
+left: 250px;
+
+}
+
+#leg-1 {
+  width: 36px;
+    height: 150px;
+    background: black;
+    top: 401px;
+    left: 258px;
+    z-index: -1;
+}
+
+#leg-2 {
+  width: 36px;
+    height: 104px;
+    background: black;
+    top: 361px;
+    left: 198px;
+    z-index: -1;
+}

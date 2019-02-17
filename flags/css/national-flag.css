@@ -1,0 +1,51 @@
+
+/* reset styles */
+* {
+        margin: 0px; padding: 0px;
+}
+
+/* make the background of the page black */
+body {
+        background: black;
+}
+
+/* flag canvas */
+#canvas {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        background: white;
+        background-image: linear-gradient(to right,#172a88, #d70051);
+}
+
+/* shapes */
+
+    #heart {
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      left: 158px;
+      top: 75px;
+
+    }
+    #heart:before,
+    #heart:after {
+      position: absolute;
+    content: "";
+    left: 79px;
+    top: 2px;
+    width: 77px;
+    height: 130px;
+    background: #81226a;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    border: 1px solid white
+
+    }
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+
+    }

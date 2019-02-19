@@ -5,103 +5,54 @@
 }
 
 /* make the background of the page black */
-body {
-        background: black;
-}
 
-#canvas2{
-  width: 500px;
-  height: 300px;
-  background: white;
-  position: fixed;
+body{
+  font: 15px/1.5 'raleway', sans-serif;
+  background-color: #f4f4f4;
+  width: 100vw;
+  height: 100vh;
 }
 
 
 
   /* flag canvas */
 #canvas {
+  margin-left: 80px;
+  margin-top: 70px;
+  border: 0.05px black solid;
+
         width: 500px;
         height: 300px;
-        position: relative;
-        transform: rotate(20deg);
-        color: white;
+        position: absolute;
+        background: white;
+}
+#box{
+
+  background-color: white;
+  width: 660px;
+  height: 850px;
+  margin: 50px auto;
+  border-radius: 20px;
+  border-right: 5px solid #ccc;
+  border-bottom: 5px solid #999;
 }
 
-#top-left123 {
-
-transform: rotate(-45deg);
-position: relative;
-left: -90px;
-top: -65px;
-}
-
-
-#top-left1{
-  width: 75px;
-  height: 12.5px;
-  background: black;
+#whole{
+  top: -118px;
+  transform: rotate(31deg);
+  transform-origin: 47% 52%;
   position: absolute;
-  top: 50px;
-  left: 80px;
+  left: 112px;
+
 }
 
-#top-left2{
-  width: 75px;
-  height: 12.5px;
-  background: black;
-  position: absolute;
-  top: 67px;
-  left: 80px;
+#whole:hover{
+  transform:scale(1.5);
+
+  transition: all 1s;
+
 }
 
-#top-left3{
-  width: 75px;
-  height: 12.5px;
-  background: black;
-  position: absolute;
-  top: 84px;
-  left: 80px;
-}
-
-
-
-
-#canvas2 top-right123 {
-
-  -ms-transform: rotate(50deg); /* IE 9 */
-    -webkit-transform: rotate(50deg); /* Safari 3-8 */
-    transform: rotate(50deg);
-position: absolute;
-left: -90px;
-top: -65px;
-}
-
-#top-right1{
-  width: 75px;
-  height: 12.5px;
-  background: black;
-  position: absolute;
-  top: 50px;
-  left: 340px;
-}
-
-#top-right2{
-  width: 75px;
-  height: 12.5px;
-  background: black;
-  position: absolute;
-  top: 67px;
-  left: 340px;
-}
-
-#top-right3{
-  width: 75px;
-  height: 12.5px;
-  background: black;
-  position: absolute;
-  top: 84px;
-  left: 340px;
-}
 
 
 #half-red {
@@ -114,9 +65,8 @@ top: -65px;
         position: absolute;
         top: 75px;
         left: 175px;
+
          /* Safari 3-8 */
-
-
 }
 
 #half-navy {
@@ -156,4 +106,227 @@ top: -65px;
         left: 250px;
         top: 112.5px;
 
+}
+
+
+
+#Tleft{
+  position: absolute;
+transform: rotate(-45deg);
+transform-origin: 25%;
+top: 89px;
+bottom: 170px;
+}
+
+
+
+
+#Tleft #top-left1{
+  width: 75px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 50px;
+  left: 80px;
+}
+
+#Tleft #top-left2{
+  width: 75px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 67px;
+  left: 80px;
+}
+
+#Tleft #top-left3{
+  width: 75px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 84px;
+  left: 80px;
+}
+
+#Tright{
+  position: absolute;
+top: -263px;
+transform: rotate(45deg);
+transform-origin: 75%;
+left: 148px;
+}
+
+#Tright #top-right1{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 50px;
+  left: 340px;
+}
+
+#Tright #top-right11{
+  width: 36px;
+      height: 12.5px;
+      background: black;
+      position: absolute;
+      top: 50px;
+      left: 379px;
+}
+
+#Tright #top-right2{
+  width: 75px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 67px;
+  left: 340px;
+}
+
+#Tright #top-right3{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 84px;
+  left: 340px;
+}
+
+#Tright #top-right33{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 84px;
+  left: 379px;
+}
+
+#Bleft{
+  left: 90px;
+    top: 90px;
+    position: absolute;
+    transform: rotate(45deg);
+    transform-origin: 25%;
+}
+
+
+#Bleft #B-left1{
+  width: 75px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 50px;
+  left: 80px;
+}
+
+#Bleft #B-left2{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 67px;
+  left: 80px;
+}
+
+#Bleft #B-left22{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 67px;
+  left: 119px;
+}
+
+#Bleft #B-left3{
+  width: 75px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 84px;
+  left: 80px;
+}
+
+#Bright{
+  left: 237px;
+    top: 261px;
+    position: absolute;
+    transform: rotate(-45deg);
+    transform-origin: 25%;
+}
+
+
+#Bright #B-right1{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 50px;
+  left: 119px;
+}
+
+#Bright #B-right11{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 50px;
+  left: 80px;
+}
+
+#Bright #B-right2{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 67px;
+  left: 80px;
+}
+
+#Bright #B-right22{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 67px;
+  left: 119px;
+}
+
+#Bright #B-right3{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 84px;
+  left: 80px;
+}
+
+#Bright #B-right33{
+  width: 36px;
+  height: 12.5px;
+  background: black;
+  position: absolute;
+  top: 84px;
+  left: 119px;
+}
+
+#texttext{
+  position: relative;
+  top: 430px;
+
+
+}
+
+#box h1{
+  text-align: center;
+  color: black;
+
+  width: 170px;
+  margin: 10px auto;
+  padding: 10px;
+  padding-top: 20px;
+
+}
+
+#box p{
+  padding: .5em 5.5em 5.5em 5.5em;
 }

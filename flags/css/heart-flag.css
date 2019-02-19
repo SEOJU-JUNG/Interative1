@@ -5,9 +5,22 @@
 }
 
 body{
-  background-color: #ddd;
+  font: 15px/1.5 'raleway', sans-serif;
+  background-color: #f4f4f4;
   width: 100vw;
   height: 100vh;
+
+}
+
+#box{
+
+  background-color: white;
+  width: 660px;
+  height: 850px;
+  margin: 50px auto;
+  border-radius: 20px;
+  border-right: 5px solid #ccc;
+  border-bottom: 5px solid #999;
 }
 
 #canvas{
@@ -15,11 +28,8 @@ body{
   background-image: linear-gradient(to right, blue , red);
   width: 500px;
   height: 300px;
-  left: 50%;
-  top: 50%;
-  margin-left: -250px;
-  margin-top: -150px;
-}
+  margin-left: 80px;
+  margin-top: 70px;}
 
 #heart {
   position: absolute;
@@ -88,19 +98,18 @@ body{
   border-bottom-left-radius: 100px;
 }
 
-  #plus{
-    top: 110px;
-    left: 60px;
-    position: absolute;
-    background: white;
-    width: 25px;
-    height: 85px;
-    z-index: 1;
-    opacity: 0.5;
-  }
+#plus{
+  top: 110px;
+  left: 60px;
+  position: absolute;
+  background: white;
+  width: 25px;
+  height: 85px;
+  z-index: 1;
+  opacity: 0.5;
+}
 
 #plus:before{
-
   content:'';
   position: absolute;
   background: white;
@@ -120,4 +129,26 @@ body{
   height: 85px;
   transform: rotate(90deg);
   opacity: 0.5;
+}
+
+#texttext{
+  position: relative;
+  top: 430px;
+
+
+}
+
+#box h1{
+  text-align: center;
+  color: black;
+
+  width: 170px;
+  margin: 10px auto;
+  padding: 10px;
+  padding-top: 20px;
+
+}
+
+#box p{
+  padding: .5em 5.5em 5.5em 5.5em;
 }

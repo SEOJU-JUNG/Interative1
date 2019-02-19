@@ -8,6 +8,18 @@ a{
   color: #6a514c;
 }
 
+.redkey a:hover{
+  color: red;
+  font-weight:bold;
+
+
+}
+
+header a:hover{
+  color: red;
+  
+}
+
 body{
 
   font: 15px/1.5 'raleway', sans-serif;
@@ -92,13 +104,7 @@ header .highlight, header .homehome a {
 }
 
 
-header a:hover{
-  color: #ec5252;
 
-  transform:scale(1.5);
-  transform-origin: right;
-  transition: all 1s;
-}
 
 /*showcase*/
 

@@ -25,7 +25,7 @@ body{
 
 #canvas{
   position: absolute;
-  background-image: linear-gradient(to right, blue , red);
+  background-image: linear-gradient(to right, red , blue);
   width: 500px;
   height: 300px;
   margin-left: 80px;
@@ -132,6 +132,7 @@ body{
 }
 
 #texttext{
+  padding: .5em 5.5em 1em 5.5em;
   position: relative;
   top: 430px;
 
@@ -140,15 +141,11 @@ body{
 
 #box h1{
   text-align: center;
-  color: black;
+color: black;
+width: 170px;
+margin: 10px auto;
+/* padding: 10px; */
+padding-top: 20px;
+padding-bottom: 15px;
 
-  width: 170px;
-  margin: 10px auto;
-  padding: 10px;
-  padding-top: 20px;
-
-}
-
-#box p{
-  padding: .5em 5.5em 5.5em 5.5em;
 }

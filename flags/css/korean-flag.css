@@ -321,9 +321,10 @@ left: 148px;
   text-align: center;
 color: black;
 width: 170px;
-margin: 0px auto;
+margin: 10px auto;
 /* padding: 10px; */
-padding-bottom: 25px;
+padding-top: 20px;
+padding-bottom: 15px;
 
 }
 
@@ -344,7 +345,7 @@ a {
 }
 
 #refer:hover{
-  ;
+
   text-decoration: none;
   color: #00ff00;
 }

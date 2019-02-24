@@ -52,17 +52,14 @@ body {
   font-weight: bolder;
 }
 
-a{
-
+#question span a{
   color:#1d030f;
   text-decoration: none;
   transition: all 1s;
 }
 
-a:hover{
+#question span a:hover{
   transform: scale(1.5);
   transform-origin:center;
-
- color: white;
-
+  color: white;
 }

@@ -10,14 +10,13 @@ a{
 
 .redkey a:hover{
   color: red;
-  font-weight:bold;
+  font-weight: 600;
 
 
 }
 
 header a:hover{
   color: red;
-  
 }
 
 body{
@@ -206,6 +205,7 @@ padding: 4px 4px 4px 4px;
 }
 
 footer {
+
   text-align: center;
   background: #bbbab3;
 padding: 9px;

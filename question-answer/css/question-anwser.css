@@ -6,7 +6,7 @@
 }
 body {
    font: 10px/1.4 'raleway', sans-serif;
-    background: lightpink;
+    background: #fdced2;
     font-size: 100px;
 }
 #question{
@@ -32,7 +32,7 @@ body {
                   justify-content: center;
                   flex-direction: column;
                   text-align: center;
-        color: lightpink;
+        color: #fdced2;
         width: 100vw;
         height: 100vh;
     }

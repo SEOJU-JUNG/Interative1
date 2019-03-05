@@ -252,3 +252,17 @@ padding-right: 15px;
 
   width: 100%;
 }
+
+p{
+
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+  transition: all 1s
+}
+
+p:hover{
+  margin: 40px -100px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: all 1s;
+}

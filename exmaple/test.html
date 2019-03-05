@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 1000px;
+        height: 1000px;
+        background: red;
+        background-image: url('house.jpg');
+        background-size: cover;
+      }
+      .box1{
+        left: 20%;
+        top: 20%;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: red;
+        background-image: url('house.jpg');
+        background-size: cover;
+      }
+      .box2{
+        left: 60%;
+        top: 60%;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: red;
+        background-image: url('house.jpg');
+        background-size: cover;
+      }
+      .boxmv{
+        animation: colorchangePrss 10s infinite linear;
+      }
+      @keyframes colorchangePrss {
+        0%{
+          filter: hue-rotate(360deg);
+        }
+        50%{
+          filter: hue-rotate(280deg);
+        }
+        100%{
+          filter: hue-rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box boxmv"></div>
+    <div class="box1 boxmv"></div>
+    <div class="box2"></div>
+  </body>
+</html>

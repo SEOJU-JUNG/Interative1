@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#box{
+  background-color: white;
+  width: 600px;
+
+  margin: 200px auto;
+}
+
+body{
+  background-color: white;
+
+
+
+  background-position: 50% 50%;
+}
+
+
+a {
+  width: 100vw;
+  height: auto;
+  margin: auto 0;
+  position: absolute;
+  display: inline;
+  text-align: center;
+  color: red;
+}
+
+a:hover {
+  color: pink;
+}
+
+
+.inner-shape {
+
+  width: 100px;
+  height: 100px;
+  background: blue;
+  float: left;
+}
+
+.outer-shape {
+  width: 600px;
+  height: 600px;
+  background: red;
+
+}
+
+.outer-shape:hover > .inner-shape{
+  background: pink;
+}
+
+div:hover~div{
+  background: orange;
+}
+
+.outer-shape:hover .inner-shape:nth-child(odd){
+background: orange;
+}

@@ -187,7 +187,7 @@ audio{
     width: 8px;
     background-color: red;
     z-index: 100;
-    transition: 4000ms linear;
+    transition: 2000ms linear;
     transition-property: transform;
     transform-origin: bottom;
     transform: scaleY(0.1);

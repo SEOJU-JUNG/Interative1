@@ -79,9 +79,9 @@ body{
 .bttnsHoverRed:hover .red{
   /* transform: rotate(360deg); */
   animation-name: spin;
-  animation-duration: 2000ms;
+  animation-duration: 1000ms;
   animation-iteration-count: 1;
-  animation-timing-function: linear;
+  animation-timing-function: all ease;
 }
 
 
@@ -121,7 +121,7 @@ audio{
   position: absolute;
   left: 50%;
   margin-left: calc(-30px/2);
-  margin-top: 72px;
+  margin-top: 446px;
   height: 30px;
   width: 30px;
   background-color:#fcfffa;
@@ -134,7 +134,7 @@ audio{
   position: absolute;
   left: 50%;
   margin-left: calc(-16px/2);
-  margin-top: -38px;
+  margin-top: 346px;
   height: 15px;
   width: 16px;
   background-color: #fcfffa;
@@ -147,7 +147,7 @@ audio{
   position: absolute;
   left: 50%;
   margin-left: calc(-16px/2);
-  margin-top: -30px;
+  margin-top: 355px;
   height: 105px;
   width: 16px;
   background-color: #fcfffa;

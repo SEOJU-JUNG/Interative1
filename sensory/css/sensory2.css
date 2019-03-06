@@ -79,9 +79,9 @@ body{
 .bttnsHoverRed:hover .red{
   /* transform: rotate(360deg); */
   animation-name: spin;
-  animation-duration: 1000ms;
+  animation-duration: 2000ms;
   animation-iteration-count: 1;
-  animation-timing-function: all ease;
+  animation-timing-function: linear;
 }
 
 

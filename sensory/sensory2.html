@@ -4,12 +4,57 @@
   <title>Sensory Experience</title>
   <link rel="stylesheet" href="css/sensory2.css" />
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
   <iframe width="0" height="0" src="https://www.youtube.com/watch?v=6X91eQbozmg" frameborder="0" allowfullscreen></iframe>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".blue").hover(function(){
+        $('.num36').toggleClass('disappear');
+        $('.num28').toggleClass('appear');
+      });
+      $(".red").hover(function(){
+        $('.num36').toggleClass('disappear');
+        $('.num47').toggleClass('appear');
+      });
+    });
+</script>
+<style media="screen">
+  .numTransition{
+    transition: 400ms opacity linear;
+  }
+  .appear{
+    opacity: 1;
+  }
+  .disappear{
+    opacity: 0;
+  }
+</style>
+
 </head>
 
 <body>
 
+    <div class="command">
+      <span class="R"><strong>command + R</strong></span><span> to play video & sound.</span>
 
+    </div>
+
+    <div class="twobox">
+      <div class="boxblue">
+      </div>
+      <div class="boxred">
+      </div>
+      <div class="numTransition num36">
+        36°C
+      </div>
+      <div class="numTransition num28">
+        28°C
+      </div>
+      <div class="numTransition num47">
+        47°C
+      </div>
+    </div>
 
   <div class="dot"></div>
   <div class="sdot"></div>
@@ -49,13 +94,13 @@
 
 
     <audio autoplay>
-      <source src="shower_sound.ogg" type="audio/ogg">
-      <source src="shower2.mp3" type="audio/mpeg">
+      <source src="showerr" type="audio/ogg">
+      <source src="showerr.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
 
     <video autoplay>
-      <source src="img/normal5.mp4" type="video/mp4">
+      <source src="img/normal8.mp4" type="video/mp4">
       <!-- <source src="img/normal5.ogg" type="video/ogg"> -->
     </video>
 

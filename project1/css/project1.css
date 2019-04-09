@@ -1,0 +1,346 @@
+body{
+  /*background-color: #f4f4f4;*/
+  padding: 0;
+  margin: 0;
+
+
+  line-height: 1.5;
+
+}
+
+/*Global*/
+.container{
+
+  width:80%;
+  margin:  auto;
+  overflow: hidden;
+  display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+}
+
+/*header*/
+header{
+  position: absolute;
+  top: 90%;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: rgba(40, 220, 24, 0.12);
+  color: #28DC18;
+  padding-top: 20px;
+  min-height: 70px;
+}
+
+/*MON to SUN*/
+header a{
+  color: #28DC18;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+/*bullet delete*/
+header ul{
+  width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+/*MON to SUN flow left*/
+header li{
+  float: left;
+  display: inline;
+  padding: 0 30px 0 30px;
+}
+
+
+.circle_MON,.circle_TUES, .circle_WED, .circle_THU,
+.circle_FRI,.circle_FRI,.circle_SAT,.circle_SUN{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #28DC18;
+  line-height: 50px;
+  text-align: center;
+  background: white;
+  border: #28DC18 solid 2px;
+  float: left;
+  display: inline;
+}
+
+
+.circle_MON:hover,
+.circle_TUES:hover,
+.circle_WED:hover,
+.circle_THU:hover,
+.circle_FRI:hover,
+.circle_SAT:hover,
+.circle_SUN:hover{
+  font-size: 0;
+  background-color: #28DC18
+}
+
+.circle_MON:hover:after,
+.circle_TUES:hover:after,
+.circle_WED:hover:after,
+.circle_THU:hover:after,
+.circle_FRI:hover:after,
+.circle_SAT:hover:after,
+.circle_SUN:hover:after{
+  content: attr(data-hover);
+  font-size: 22px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+#showcase{
+z-index: 99;
+text-align: center;
+width:1000px;
+height: :500px;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-left: -500px;
+margin-top: -200px;
+
+}
+.seojoo{
+  color: #28DC18;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+ top:10px;
+  position: relative;
+}
+.sojoo:hover{
+  animation-name: rainbow;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes rainbow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+.Records{
+  color: #22211B;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+ top: -10px;
+  position: relative;
+}
+
+h1{
+  position: relative;
+  top: -20px;
+  color: #28DC18;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 140px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+h1:hover{
+  animation-name: rainbow;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes rainbow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  z-index: 1;
+  display: inline-block;
+  font-size: 18px;
+  padding-top: 10px;
+  /*or whatever you want*/
+  color: black;
+}
+
+/*Bubble1*/
+.Bubble1 {
+  z-index: 6;
+  top:130px;
+    left:150px;
+    position: absolute;
+    display: inline-block;
+}
+.text-box1 {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+}
+.text-box1:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+.webweb {
+  font-family: 'Permanent Marker', cursive;
+  z-index: 1;
+  display: inline-block;
+  font-size: 25px;
+  padding-top: 10px;
+  /*or whatever you want*/
+  color: black;
+}
+.img1 {
+
+  image-resolution: from-image;
+  width: 300px;
+  height: 310px;
+
+  z-index: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Bubble2*/
+.Bubble2 {
+    margin-left: 1200px;
+  top: 100px;
+    position: absolute;
+    display: inline-block;
+}
+.text-box2 {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.text-box2:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+.img2 {
+
+  image-resolution: from-image;
+  width: 170px;
+  height: 180px;
+
+  z-index: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*Bubble3*/
+.Bubble3 {
+  top: 530px;
+    left:1100px;
+
+    margin-left: 100px;
+    position: absolute;
+    display: inline-block;
+}
+.text-box3 {
+  top: 8px;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.text-box3:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+.img3 {
+
+  image-resolution: from-image;
+  width: 180px;
+  height: 180px;
+
+  z-index: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Bubble4 about me*/
+.Bubble4 {
+  top: 330px;
+    left:1200px;
+    margin-left: 100px;
+    position: absolute;
+    display: inline-block;
+}
+.text-box4 {
+  left: 10px;
+    top: 10px;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.text-box4:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+.img4 {
+
+  image-resolution: from-image;
+  width: 180px;
+  height: 180px;
+
+  z-index: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

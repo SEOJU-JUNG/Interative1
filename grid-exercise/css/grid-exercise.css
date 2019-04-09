@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% auto auto auto auto auto auto auto 15%;
+  grid-template-rows: 100vh;
+  grid-gap: 10px 20px;
+}
+
+.grid-item {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+
+#item-1 {
+  height: 150px;
+  background: orange;
+
+}

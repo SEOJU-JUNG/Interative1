@@ -1,0 +1,468 @@
+body{
+  /*background-color: #f4f4f4;*/
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+
+}
+
+/*Global*/
+.container{
+
+  width:100vw;
+  margin:  auto;
+  overflow: hidden;
+  display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+}
+
+/*header*/
+header{
+  z-index: 999;
+  position: fixed;
+  top: 90%;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: rgba(40, 220, 24, 0.12);
+  color: #28DC18;
+  padding-top: 20px;
+  min-height: 70px;
+}
+
+/*MON to SUN*/
+header a{
+  color: #28DC18;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+/*bullet delete*/
+header ul{
+  width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+/*MON to SUN flow left*/
+header li{
+  float: left;
+  display: inline;
+  padding: 0 30px 0 30px;
+}
+
+
+.circle_MON,.circle_TUES, .circle_WED, .circle_THU,
+.circle_FRI,.circle_FRI,.circle_SAT,.circle_SUN{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #28DC18;
+  line-height: 50px;
+  text-align: center;
+  background: white;
+  border: #28DC18 solid 2px;
+  float: left;
+  display: inline;
+}
+
+
+.circle_MON:hover,
+.circle_TUES:hover,
+.circle_WED:hover,
+.circle_THU:hover,
+.circle_FRI:hover,
+.circle_SAT:hover,
+.circle_SUN:hover{
+  font-size: 0;
+  background-color: #28DC18
+}
+
+.circle_MON:hover:after,
+.circle_TUES:hover:after,
+.circle_WED:hover:after,
+.circle_THU:hover:after,
+.circle_FRI:hover:after,
+.circle_SAT:hover:after,
+.circle_SUN:hover:after{
+  content: attr(data-hover);
+  font-size: 22px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+.containerA{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  float: left;
+  background-color: white;
+
+}
+.BK-B{
+  background-color: skyblue;
+}
+
+
+
+#showcase{
+z-index: 99;
+text-align: center;
+width:1000px;
+height: :500px;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-left: -500px;
+margin-top: -200px;
+
+}
+.seojoo{
+  color: #28DC18;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  top:14px;
+  position: relative;
+}
+.sojoo:hover{
+  animation-name: rainbow;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes rainbow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+.Records{
+  color: #22211B;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+
+  font-size: 42px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+ top: -30px;
+  position: relative;
+}
+
+h1{
+  position: relative;
+  top: -15px;
+  color: #28DC18;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 120px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+h1:hover{
+  animation-name: rainbow;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes rainbow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  z-index: 1;
+  display: inline-block;
+  font-size: 23px;
+  padding-top: 25px;
+  /*or whatever you want*/
+  color: black;
+}
+
+
+/*Bubble1*/
+.Bubble1 {
+
+  z-index: 6;
+  top:47px;
+    left:270px;
+    position: absolute;
+    display: inline-block;
+}
+.text-box1 {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+}
+.text-box1:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+
+.img1 {
+
+  width: 970px;
+  image-resolution: from-image;
+  z-index: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Bubble2*/
+.Bubble2 {
+
+    margin-left: 1200px;
+    top: 100px;
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+}
+.text-box2 {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.text-box2:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+.img2 {
+
+  image-resolution: from-image;
+  width: 185px;
+  height: 180px;
+
+  z-index: 6;
+  display: block;
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+
+
+
+/*Bubble3*/
+.Bubble3 {
+  top: 530px;
+    left:1100px;
+
+    margin-left: 100px;
+    position: absolute;
+    display: inline-block;
+}
+.text-box3 {
+  top: 8px;
+  left: 5px;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.text-box3:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+.img3 {
+
+  image-resolution: from-image;
+  width: 180px;
+  height: 180px;
+
+  z-index: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Bubble4 about me*/
+.Bubble4 {
+  top: 330px;
+    left:1200px;
+    margin-left: 100px;
+    position: absolute;
+    display: inline-block;
+}
+.text-box4 {
+  left: 0px;
+    top: -10px;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.text-box4:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+.img4 {
+
+  image-resolution: from-image;
+  width: 200px;
+  height: 180px;
+
+  z-index: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background: #28DC18;
+  padding: 9px;
+  margin-top: 60px;
+}
+
+
+
+
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  color: red;
+  font-size: 42px;
+  color: #CD2829;
+  font-weight: 900;
+}
+
+
+
+h4{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 33px;
+  color: black;
+  font-weight: 700;
+  font: uppercase;
+}
+
+.WebTitle{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 33px;
+  color: black;
+  font-weight: 700;
+  font: uppercase;
+}
+
+.WebTitle:hover {
+  background-color: skyblue;
+  font:0;
+}
+
+
+
+.WebTitle:hover:after{
+  content: attr(data-hover);
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 33px;
+  color: black;
+  font-weight: 700;
+  font: uppercase;
+  z-index: 1;
+  padding-left: 20px;
+
+}
+
+.WebAuthor, .WebPeriod{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  font: uppercase;
+}
+
+.WebAuthor:hover:after{
+  content: attr(data-hover);
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  font: uppercase;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+.WebPeriod:hover:after{
+  content: attr(data-hover);
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  font: uppercase;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+p{
+  width: 300px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+  font-size: 15px;
+  color: black;
+  font-weight: lighter;
+  font: uppercase;
+
+}
+
+h5{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  font: uppercase;
+}

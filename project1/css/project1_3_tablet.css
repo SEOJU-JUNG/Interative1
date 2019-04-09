@@ -1,0 +1,5 @@
+@media (min-width: 670px) and (max-width: 1024px) {
+    .bg-img{
+      display: none;
+    }
+}

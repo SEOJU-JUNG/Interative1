@@ -29,6 +29,8 @@ $(document).ready(function(){
     var sat = document.getElementById('SATBOX').offsetTop;
     var sun = document.getElementById('SUNBOX').offsetTop;
 
+
+
     if(scrollTop<mon){
       $('.circle_MON').removeClass('hovered');
       $('.circle_TUES').removeClass('hovered');
@@ -39,6 +41,9 @@ $(document).ready(function(){
       $('.circle_SUN').removeClass('hovered');
     }
     if (scrollTop>=mon) {
+      if(scrollTop<tues){
+        $('.scroll1').addClass('scroll_ani');
+      }
       $('.circle_MON').addClass('hovered');
       $('.circle_TUES').removeClass('hovered');
       $('.circle_WED').removeClass('hovered');
@@ -47,6 +52,9 @@ $(document).ready(function(){
       $('.circle_SAT').removeClass('hovered');
       $('.circle_SUN').removeClass('hovered');
     }if (scrollTop>=tues) {
+      if(scrollTop<wed){
+        $('.scroll2').addClass('scroll_ani');
+      }
       $('.circle_TUES').addClass('hovered');
       $('.circle_MON').removeClass('hovered');
       $('.circle_WED').removeClass('hovered');
@@ -55,6 +63,9 @@ $(document).ready(function(){
       $('.circle_SAT').removeClass('hovered');
       $('.circle_SUN').removeClass('hovered');
     }if (scrollTop>=wed) {
+      if(scrollTop<thurs){
+        $('.scroll3').addClass('scroll_ani');
+      }
       $('.circle_WED').addClass('hovered');
       $('.circle_MON').removeClass('hovered');
       $('.circle_TUES').removeClass('hovered');

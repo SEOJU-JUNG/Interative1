@@ -1,10 +1,47 @@
+/* SCROLL */
+.icon_scroll{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  width: 300px;
+  height: 300px;
+}
+.scroll_ani{
+  animation: scrollprss 3000ms linear forwards;
+}
+@keyframes scrollprss {
+  0%{
+    opacity: 1;
+  }
+  10%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+/* SCOLL END */
+
 body{
   /*background-color: #f4f4f4;*/
   padding: 0;
   margin: 0;
   line-height: 1.5;
-
-
   /* min-height: 400px; */
 }
 .bg-img{
@@ -115,7 +152,7 @@ header li{
 .circle_SAT:hover,
 .circle_SUN:hover{
 font-size: 0;
-background-color: #28DC18
+background-color: #28DC18;
 }
 
 
@@ -133,6 +170,27 @@ background-color: #28DC18
   text-align: center;
   z-index: 1;
 }
+.circle_MON:hover .mon_gif,
+.circle_TUES:hover,
+.circle_WED:hover,
+.circle_THURS:hover,
+.circle_FRI:hover,
+.circle_SAT:hover,
+.circle_SUN:hover{
+  opacity: 1;
+}
+.nav_pic{
+  position: absolute;
+  margin-left: -24px;
+  margin-top: -24px;
+
+}
+.mon_gif{
+  width: 100px;
+  height:auto;
+  opacity: 0;
+}
+
 
 .containerA{
   /* margin-top: -30px; */

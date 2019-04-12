@@ -74,6 +74,9 @@ $(document).ready(function(){
       $('.circle_SAT').removeClass('hovered');
       $('.circle_SUN').removeClass('hovered');
     }if (scrollTop>=thurs) {
+      if(scrollTop<fri){
+        $('.scroll4').addClass('scroll_ani');
+      }
       $('.circle_THURS').addClass('hovered');
       $('.circle_MON').removeClass('hovered');
       $('.circle_TUES').removeClass('hovered');
@@ -82,6 +85,9 @@ $(document).ready(function(){
       $('.circle_SAT').removeClass('hovered');
       $('.circle_SUN').removeClass('hovered');
     }if (scrollTop>=fri) {
+      if(scrollTop<sat){
+        $('.scroll5').addClass('scroll_ani');
+      }
       $('.circle_FRI').addClass('hovered');
       $('.circle_MON').removeClass('hovered');
       $('.circle_TUES').removeClass('hovered');
@@ -90,6 +96,9 @@ $(document).ready(function(){
       $('.circle_SAT').removeClass('hovered');
       $('.circle_SUN').removeClass('hovered');
     }if (scrollTop>=sat) {
+      if(scrollTop<sun){
+        $('.scroll6').addClass('scroll_ani');
+      }
       $('.circle_SAT').addClass('hovered');
       $('.circle_MON').removeClass('hovered');
       $('.circle_TUES').removeClass('hovered');
@@ -98,6 +107,9 @@ $(document).ready(function(){
       $('.circle_FRI').removeClass('hovered');
       $('.circle_SUN').removeClass('hovered');
     }if (scrollTop>=sun) {
+      if(scrollTop<sat){
+        $('.scroll7').addClass('scroll_ani');
+      }
       $('.circle_SUN').addClass('hovered');
       $('.circle_MON').removeClass('hovered');
       $('.circle_TUES').removeClass('hovered');

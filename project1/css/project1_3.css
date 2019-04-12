@@ -9,7 +9,7 @@
   height: 300px;
 }
 .scroll_ani{
-  animation: scrollprss 3000ms linear forwards;
+  animation: scrollprss 2000ms linear forwards;
 }
 @keyframes scrollprss {
   0%{

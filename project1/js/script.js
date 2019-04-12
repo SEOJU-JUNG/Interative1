@@ -107,9 +107,7 @@ $(document).ready(function(){
       $('.circle_FRI').removeClass('hovered');
       $('.circle_SUN').removeClass('hovered');
     }if (scrollTop>=sun) {
-      if(scrollTop<sat){
-        $('.scroll7').addClass('scroll_ani');
-      }
+      $('.scroll7').addClass('scroll_ani');
       $('.circle_SUN').addClass('hovered');
       $('.circle_MON').removeClass('hovered');
       $('.circle_TUES').removeClass('hovered');

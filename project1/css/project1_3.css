@@ -168,15 +168,15 @@ background-color: #28DC18;
   color: white;
   line-height: 50px;
   text-align: center;
-  z-index: 1;
+  z-index: -1;
 }
 .circle_MON:hover .mon_gif,
-.circle_TUES:hover,
-.circle_WED:hover,
-.circle_THURS:hover,
-.circle_FRI:hover,
-.circle_SAT:hover,
-.circle_SUN:hover{
+.circle_TUES:hover .tue_gif,
+.circle_WED:hover .wed_gif,
+.circle_THURS:hover .thurs_gif,
+.circle_FRI:hover .fri_gif,
+.circle_SAT:hover .sat_gif,
+.circle_SUN:hover .sun_gif{
   opacity: 1;
 }
 .nav_pic{
@@ -185,11 +185,14 @@ background-color: #28DC18;
   margin-top: -24px;
 
 }
-.mon_gif{
+.mon_gif, .tue_gif,.wed_gif,.thurs_gif,
+.fri_gif,.sat_gif,.sun_gif {
   width: 100px;
   height:auto;
   opacity: 0;
 }
+
+
 
 
 .containerA{

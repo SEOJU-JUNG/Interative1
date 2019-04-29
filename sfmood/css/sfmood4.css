@@ -1,0 +1,297 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+body {
+
+}
+#desktop {
+
+  width: 100vw;
+  height:100vh;
+  background-color: white;
+
+}
+
+img{
+  position:absolute;
+  left: 560px;
+}
+#oneto9{
+  top: 450px;
+position: fixed;
+padding: 30px;
+margin: auto 50px;
+font-family: acumin-pro, sans-serif;
+font-weight: 200;
+font-style: normal;
+font-size: 20px;
+color: #707070;
+display: inline-block;
+margin: 10px;
+}
+
+.aa{
+  display: block;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 15px;
+  color: #707070;
+}
+
+.aa4{
+  display: block;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 15px;
+  color: #DC9265;
+}
+
+
+
+/* background-image:  url("../img/4_1.jpg");
+background-repeat:no-repeat;
+background-size: 560px;
+background-position: 50% 50%; */
+
+}
+
+.text{
+  position: absolute;
+  display:inline;
+  top:200px;
+  width: 450px;
+  height: 50px;
+  left: 40px;
+
+}
+  .FISHERMEN{
+    position: absolute;
+    display:inline;
+    top:200px;
+    width: 500px;
+    height: 50px;
+    left: 40px;
+
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    text-align: left;
+    color: rgb(220, 146, 101);
+  }
+
+  .explanation{
+    position: absolute;
+    display:inline;
+    top:245px;
+    width: 450px;
+    height: 50px;
+    left: 40px;
+
+    font-family: acumin-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+    color: rgb(220, 146, 101);
+
+  }
+
+
+  .sfmood{
+
+  margin-top: 15px;
+  font-size: 70px;
+  text-align: center;
+  color: #0B0A0A;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+
+
+  span{
+    padding-left:7px;
+    padding-right:7px;
+  }
+
+  a{
+    color: #0B0A0A;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #47d0f3;
+  }
+  span:hover{
+    color: #47d0f3;
+  }
+
+  .menu{
+    top:85px;
+    width: 700px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-700px/2);
+  font-size: 40px;
+  text-align: center;
+  color: #0B0A0A;
+  font-family: acumin-pro-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+
+.caption{
+top: 450px;
+left: 1250px;
+position: fixed;
+padding: 30px;
+margin: auto 50px;
+display: inline-block;
+margin: 10px;
+
+}
+
+.cap_title{
+font-family: acumin-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 12px;
+  color: #0B0A0A;
+  padding-bottom: 3px;
+}
+.cap_text1, .cap_text2{
+  font-family: acumin-pro, sans-serif;
+  font-weight: 200;
+  font-style: italic;
+font-size: 12px;
+  color: #0B0A0A;
+}
+
+.cap_text2:hover{
+  color:#47d0f3;
+}
+
+
+
+
+
+
+#tablet,
+#mobile,
+#print {
+    display: none;
+}
+
+/* mobile */
+@media (max-width: 670px) {
+    body {
+        background: white;
+    }
+    #mobile {
+
+      display: inline;
+      width: 100vw;
+      height:100vh;
+
+      background-size: contain;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+
+    .sfmood{
+    font-size: 70px;
+    text-align: center;
+    color: #0B0A0A;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+
+    span{
+      padding-left:7px;
+      padding-right:7px;
+    }
+
+    a{
+      color: #0B0A0A;
+      text-decoration: none;
+    }
+    a:hover{
+      color: #47d0f3;
+    }
+    span:hover{
+      color: #47d0f3;
+    }
+
+    .menu{
+      top:70px;
+      width: 700px;
+      height: 50px;
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-700px/2);
+    font-size: 40px;
+    text-align: center;
+    color: #0B0A0A;
+    font-family: acumin-pro-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+    .FISHERMEN,.RUSSIAN,.TELEGRAPH,.NOB,.CHINA,.UNION,
+    .CIVIC,.MARKET{
+      display: inline-block;
+      font-family: acumin-pro, sans-serif;
+      font-weight: 300;
+      font-size: 0.9em;
+    }
+    .FISHERMEN:hover{
+      font-weight: bold;
+      color: #dc9265;
+    }
+
+    .RUSSIAN:hover{
+      color: #66789e;
+      font-weight: bold;
+    }
+    .TELEGRAPH:hover{
+      color: #66789e;
+      font-weight: bold;
+    }
+    .NOB:hover{
+      color: #66789e;
+      font-weight: bold;
+    }
+
+    .CHINA:hover{
+      color: #e95e5c;
+      font-weight: bold;
+    }
+
+    .UNION:hover{
+      color: #262a5b;
+      font-weight: bold;
+    }
+    .CIVIC:hover{
+      color: #262a5b;
+      font-weight: bold;
+    }
+    .MARKET:hover{
+      color: #262a5b;
+      font-weight: bold;
+    }
+
+    #desktop,
+    #tablet,
+    #print {
+        display: none;
+    }
+}

@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    background: black;
+    
 }
 #desktop {
 background-color: white;
@@ -19,6 +19,7 @@ background-position: 50% 50%;
 }
 
 .Sfmood{
+  margin-top: 15px;
 font-size: 70px;
 text-align: center;
 color: #0B0A0A;
@@ -27,16 +28,25 @@ font-weight: 700;
 font-style: normal;
 }
 
+
 span{
   padding-left:7px;
   padding-right:7px;
 }
 
+a{
+  color: #0B0A0A;
+  text-decoration: none;
+}
+a:hover{
+  color: #47d0f3;
+}
 span:hover{
   color: #47d0f3;
 }
+
 .menu{
-  top:70px;
+  top:85px;
   width: 700px;
   height: 50px;
   position: absolute;
@@ -132,6 +142,48 @@ font-style: normal;
       background-repeat: no-repeat;
       position: absolute;
     }
+
+    .Sfmood{
+    font-size: 70px;
+    text-align: center;
+    color: #0B0A0A;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+
+    span{
+      padding-left:7px;
+      padding-right:7px;
+    }
+
+    a{
+      color: #0B0A0A;
+      text-decoration: none;
+    }
+    a:hover{
+      color: #47d0f3;
+    }
+    span:hover{
+      color: #47d0f3;
+    }
+
+    .menu{
+      top:70px;
+      width: 700px;
+      height: 50px;
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-700px/2);
+    font-size: 40px;
+    text-align: center;
+    color: #0B0A0A;
+    font-family: acumin-pro-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
     .FISHERMEN,.RUSSIAN,.TELEGRAPH,.NOB,.CHINA,.UNION,
     .CIVIC,.MARKET{
       display: inline-block;

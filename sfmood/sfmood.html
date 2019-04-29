@@ -1,12 +1,89 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SF Mood</title>
-  <link rel="stylesheet" href="css/sfmood.css" />
-  <meta charset="utf-8">
+    <title>SF mood</title>
+    <!-- Set the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS stylesheet -->
+    <link rel="stylesheet" href="css/sfmood.css" />
+
+  <link rel="stylesheet" href="https://use.typekit.net/cvd7qfl.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xst3edo.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cvd7qfl.css">
+
+
+
+
 </head>
 
+
+
 <body>
-hello typo
+    <!-- show by default -->
+    <div id="desktop">
+      <div class="Sfmood">SF Mood</div>
+      <div class="menu"><span>MAP</span><span>PHOTOGRAPHER</span><span>ABOUT</span></div>
+      <p class="FISHERMEN" onclick="myFunction()">④ FISHERMEN’S WHARF</p>
+      <script>
+      function myFunction() {
+        document.getElementById("FISHERMEN").innerHTML = "url("../4_1.jpg")";
+      }
+      </script>
+
+      <div class="RUSSIAN">
+        ② RUSSIAN HILL
+      </div>
+      <div class="TELEGRAPH">
+        ③ TELEGRAPH HILL
+      </div>
+      <div class="NOB">
+        ① NOB HILL
+      </div>
+      <div class="CHINA">
+        ⑨ CHINA TOWN
+      </div>
+      <div class="UNION">
+        ⑦ UNION SQUARE
+      </div>
+      <div class="CIVIC">
+        ⑥ CIVIC CENTER
+      </div>
+      <div class="MARKET">
+        ⑤ MARKET ST
+      </div>
+    </div>
+    <!-- show on tablet -->
+    <div id="tablet">
+        This is for tablet.
+    </div>
+    <!-- show on mobile -->
+    <div id="mobile">
+      <div class="FISHERMEN">
+        ④ FISHERMEN’S WHARF
+      </div>
+      <div class="RUSSIAN">
+        ② RUSSIAN HILL
+      </div>
+      <div class="TELEGRAPH">
+        ③ TELEGRAPH HILL
+      </div>
+      <div class="NOB">
+        ① NOB HILL
+      </div>
+      <div class="CHINA">
+        ⑨ CHINA TOWN
+      </div>
+      <div class="UNION">
+        ⑦ UNION SQUARE
+      </div>
+      <div class="CIVIC">
+        ⑥ CIVIC CENTER
+      </div>
+      <div class="MARKET">
+        ⑤ MARKET ST
+      </div>
+    </div>
+
 </body>
 </html>

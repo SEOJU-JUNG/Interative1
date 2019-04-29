@@ -1,0 +1,1342 @@
+body {
+
+}
+
+.letter {
+	width: 90px;
+	height: 80px;
+	position: relative;
+	display: inline-block;
+	margin: 20px;
+}
+
+/* pieces */
+
+#A .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+  #A .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+
+
+
+/* A */
+
+/*
+style the left
+vertical stroke in
+'A' by combining
+classes
+*/
+
+#A .horizontal.top {
+border-top-right-radius:40px;
+border-top-left-radius:40px;
+	width: 90px;
+	height: 40px;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+#A .vertical.left {
+	border-top-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+#A .vertical.right {
+	border-top-right-radius:40px;
+	right: 0px;
+	top: 0px;
+	height: 80px;
+}
+
+
+
+
+/*
+
+#A .vertical {
+	background-image: repeating-linear-gradient(to right, transparent, transparent 5px, #fff 5px, #fff 7px, transparent 7px);
+}
+
+#A .horizontal {
+	background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #fff 5px, #fff 7px, transparent 7px);
+}
+
+*/
+
+/* B */
+
+#B .horizontal, #B .vertical{
+	background: blue;
+}
+
+#B .vertical {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#B .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#B .vertical.left {
+	left: 50px;
+	top: 40px;
+	border-radius: 40px;
+	z-index: 1;
+}
+
+#B .vertical.right {
+	right: 0px;
+	top: 0px;
+	border-radius: 40px;
+}
+
+#B .horizontal.top {
+	top: 0px;
+	left: 0px;
+
+}
+
+
+
+#B .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+
+}
+
+#B .b-intersect {
+	width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 15px solid transparent;
+
+    position: absolute;
+
+    top: 135px;
+    right: 0px;
+}
+
+#B_Korean .horizontal_B {
+	background: pink;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	float: left;
+  display: inline;
+}
+
+#B_Korean .vertical_B {
+	background: pink;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	float: left;
+  display: inline;
+}
+
+#B_Korean .horizontal_B.top_B {
+
+	width: 90px;
+	height: 40px;
+	top: 40px;
+	left: 0px;
+	z-index: -1;
+}
+
+#B_Korean .vertical_B.left_B {
+
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+#B_Korean .vertical_B.right_B {
+	right: 0px;
+	top: 0px;
+	height: 80px;
+}
+
+/*
+#B .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+
+#B .vertical {
+	background: cyan;
+	mix-blend-mode: screen;
+}
+*/
+
+#C .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+#C .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+
+
+#C .horizontal.top {
+border-top-right-radius:40px;
+
+	width: 40px;
+	height: 35px;
+	top: 0px;
+	left: 50px;
+	z-index: -1;
+}
+
+#C .vertical.left {
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+
+
+#C .horizontal.bottom {
+border-bottom-right-radius:40px;
+	width: 40px;
+	height: 35px;
+	top: 45px;
+	left: 50px;
+	z-index: -1;
+}
+
+
+
+#D .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+#D .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+#D .vertical.left {
+	left: 50px;
+	top: 40px;
+}
+
+#D .vertical.right {
+	border-top-right-radius: 40px;
+	right: 0px;
+	top: 0px;
+}
+
+#D .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+#D .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+/* E */
+
+#E .vertical {
+	color: red;
+	width: 40px;
+	height: 35px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#E .horizontal {
+	color: blue;
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#E .vertical.left {
+	left: 50px;
+	top: 45px;
+	z-index: 1;
+}
+
+#E .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+
+#E .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+
+#E .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+/* F */
+
+#F .vertical {
+	color: red;
+	width: 40px;
+	height: 35px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#F .horizontal {
+	color: blue;
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+/* #F .vertical.left {
+	left: 50px;
+	top: 45px;
+	z-index: 1;
+} */
+
+#F .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+
+#F .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+
+#F .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+/* G */
+
+#G .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+#G .horizontal {
+	width: 50px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+#G .horizontal.top {
+border-top-right-radius:40px;
+
+	width: 50px;
+	height: 35px;
+	top: 0px;
+	left: 40px;
+	z-index: -1;
+}
+
+#G .vertical.left {
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+#G .horizontal.bottom {
+
+border-bottom-left-radius:40px;
+	width: 50px;
+	height: 35px;
+	top: 45px;
+	left: 40px;
+	z-index: -1;
+}
+
+/* H */
+
+#H .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+#H .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+#H .vertical.left {
+	left: 50px;
+	top: 40px;
+}
+
+#H .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+
+#H .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+#H .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+#H .middle {
+	position: absolute;
+	background-color: red;
+	top: 30px;
+	left: 0px;
+	z-index: 99;
+	width: 90px;
+	height: 20px;
+}
+
+/* I */
+
+#I .vertical {
+	color: red;
+	width: 40px;
+	height: 80px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#I .horizontal {
+	color: blue;
+	width: 90px;
+	height: 20px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+/* #I .vertical.left {
+	left: 50px;
+	top: 45px;
+	z-index: 1;
+} */
+
+#I .vertical.right {
+	right: 25px;
+	top: 0px;
+}
+
+#I .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+
+#I .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+/* J */
+
+#J .vertical {
+	color: red;
+	width: 40px;
+	height: 45px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#J .horizontal {
+	color: blue;
+	width: 90px;
+	height: 20px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+/* #I .vertical.left {
+	left: 50px;
+	top: 45px;
+	z-index: 1;
+} */
+
+#J .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+
+/* #J .horizontal.top {
+	top: 0px;
+	left: 0px;
+} */
+
+
+#J .horizontal.bottom {
+	border-bottom-left-radius:40px;
+	width: 45px;
+	height: 35px;
+	top: 45px;
+	left: 0px;
+	z-index: -1;
+}
+
+#J .horizontal.bottom2 {
+background-color: pink;
+border-bottom-right-radius:40px;
+	width: 45px;
+	height: 35px;
+	top: 45px;
+	left: 45px;
+	z-index: -1;
+}
+
+
+/* K */
+
+#K .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+#K .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+
+
+#K .horizontal.top {
+	background-color: red;
+	border-top-left-radius:40px;
+	width: 40px;
+	height: 35px;
+	top: 0px;
+	left: 50px;
+	z-index: -1;
+}
+
+#K .vertical.left {
+	background-color: red;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+
+#K .horizontal.bottom {
+	border-bottom-left-radius:40px;
+	width: 40px;
+	height: 35px;
+	top: 45px;
+	left: 50px;
+	z-index: -1;
+}
+
+/* L */
+
+#L .vertical {
+	color: red;
+	width: 40px;
+	height: 35px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#L .horizontal {
+	color: blue;
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#L .vertical.left {
+	left: 50px;
+	top: 45px;
+	z-index: 1;
+}
+
+
+#L .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+
+#L .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+/* M */
+
+#M .vertical {
+
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#M .horizontal {
+
+
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#M .vertical.left {
+	background: red;
+	width: 40px;
+	height: 40px;
+	left: 50px;
+	top: 40px;
+	z-index: 1;
+}
+
+#M .vertical.right {
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 40px 40px;
+border-color: transparent transparent #007bff transparent;
+	right: 0px;
+	top: 0px;
+}
+
+#M .horizontal.top {
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 40px 0 0 40px;
+border-color: transparent transparent transparent #007bff;
+	top: 0px;
+	left: 0px;
+}
+
+
+#M .horizontal.bottom {
+	width: 40px;
+	height: 40px;
+	background: red;
+	bottom: 0px;
+	left: 0px;
+}
+
+/* N */
+
+#N .vertical {
+
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#N .horizontal {
+
+
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#N .vertical.left {
+	background: red;
+	width: 40px;
+	height: 40px;
+	left: 50px;
+	top: 40px;
+	z-index: 1;
+}
+
+#N .vertical.right {
+	width: 40px;
+	height: 40px;
+	background: red;
+	right: 0px;
+	top: 0px;
+}
+
+#N .horizontal.top {
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 40px 0 0 40px;
+border-color: transparent transparent transparent red;
+	top: 0px;
+	left: 0px;
+}
+
+
+#N .horizontal.bottom {
+	width: 40px;
+	height: 40px;
+	background: red;
+	bottom: 0px;
+	left: 0px;
+}
+
+/* o */
+#O .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+#O .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+
+
+#O .horizontal.top {
+border-top-right-radius:40px;
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: -1;
+}
+
+#O .vertical.left {
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+#O .vertical.right {
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+
+
+#O .horizontal.bottom {
+border-bottom-right-radius:40px;
+	width: 40px;
+	height: 40px;
+	top: 40px;
+	left: 50px;
+	z-index: -1;
+}
+
+/* P */
+
+#P .vertical {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+#P .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+#P .horizontal.top {
+border-top-right-radius:40px;
+
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: -1;
+}
+
+#P .vertical.left {
+
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+/* Q */
+#Q .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+#Q .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+
+
+#Q .horizontal.top {
+border-top-right-radius:40px;
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: -1;
+}
+
+#Q .vertical.left {
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+#Q .vertical.right {
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+
+
+#Q .horizontal.bottom {
+
+	width: 40px;
+	height: 40px;
+	top: 40px;
+	left: 50px;
+	z-index: -1;
+}
+
+/* R */
+#R .vertical {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+}
+
+#R .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+#R .vertical.left {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 40px 0 0 40px;
+border-color: transparent transparent transparent #007bff;
+	left: 50px;
+	top: 40px;
+}
+
+#R .vertical.right {
+	background: PINK;
+	width: 40px;
+	height: 40px;
+	border-top-right-radius: 40px;
+	right: 0px;
+	top: 0px;
+}
+
+
+#R .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+/* S */
+
+#S .vertical {
+	width: 40px;
+	height: 35px;
+	background: blue;
+	position: absolute;
+}
+
+#S .horizontal {
+	width: 40px;
+	height: 35px;
+	background: red;
+	position: absolute;
+}
+
+
+#S .vertical.right {
+	background: pink;
+	border-top-left-radius:40px;
+	height: 35px;
+	left: 10px;
+	top: 0px;
+}
+
+#S .vertical.left {
+	z-index: 99;
+	background: pink;
+	right: 0px;
+	top: 0px;
+	border-top-right-radius:40px;
+}
+
+
+#S .horizontal.bottom2 {
+	z-index: 99;
+	background: pink;
+	right: 50px;
+	top: 45px;
+	border-bottom-left-radius:40px;
+}
+
+#S .horizontal.bottom {
+	background: pink;
+	border-bottom-right-radius:40px;
+	height: 35px;
+	left: 40px;
+	top: 45px;
+}
+
+/* T */
+
+#T .vertical {
+	color: red;
+	width: 40px;
+	height: 80px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#T .horizontal {
+	color: blue;
+	width: 90px;
+	height: 20px;
+	background: red;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+/* #I .vertical.left {
+	left: 50px;
+	top: 45px;
+	z-index: 1;
+} */
+
+#T .vertical.right {
+	right: 25px;
+	top: 0px;
+}
+
+#T .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+
+/* U */
+
+#U .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+}
+
+#U .horizontal {
+	width: 40px;
+	height: 40px;
+	background: red;
+	position: absolute;
+}
+
+
+
+#U .vertical.right {
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+}
+
+#U .horizontal.bottom {
+border-bottom-right-radius:40px;
+	width: 40px;
+	height: 40px;
+	top: 40px;
+	left: 50px;
+	z-index: -1;
+}
+
+#U .horizontal.bottom3 {
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: 1;
+	background: pink;
+}
+
+/* V */
+
+
+/* #V .vertical {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+} */
+
+
+#V .vertical.right {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 40px 40px 0;
+border-color: transparent #007bff transparent transparent;
+left: 0px;
+top: 40px;
+position: absolute;
+}
+
+#V .horizontal.bottom {
+	left: 50px;
+	top: 40px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 40px 40px 0 0;
+border-color: #007bff transparent transparent transparent;
+}
+
+#V .horizontal.bottom3 {
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: 1;
+	background: pink;
+}
+
+#V .horizontal.bottom2 {
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: 1;
+	background: pink;
+	position: absolute;
+}
+
+/* W */
+#W .vertical.right {
+width: 0;
+height: 0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 40px 40px 0 0;
+border-color: #007bff transparent transparent transparent;
+left: 0px;
+top: 40px;
+position: absolute;
+}
+
+#W  .horizontal.bottom {
+left: 50px;
+top: 40px;
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 40px 40px 0;
+border-color: transparent #007bff transparent transparent;
+}
+
+#W  .horizontal.bottom3 {
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: 1;
+	background: pink;
+}
+
+#W  .horizontal.bottom2 {
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: 1;
+	background: pink;
+	position: absolute;
+}
+
+/* X */
+
+#X .vertical.right {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 40px 40px;
+	border-color: transparent transparent #007bff transparent;
+left: 0px;
+top: 40px;
+position: absolute;
+}
+
+#X .bottom.right {
+left: 50px;
+top: 40px;
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 40px 0 0 40px;
+border-color: transparent transparent transparent #007bff;
+}
+
+#X  .top.left {
+	top: 0px;
+	left: 50px;
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 40px 40px 0;
+border-color: transparent #007bff transparent transparent;
+}
+
+#X  .top.right {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 40px 0 0;
+	border-color: #007bff transparent transparent transparent;
+	top: 0px;
+	left: 50px;
+	position: absolute;
+}
+
+/* Y */
+
+
+
+#Y .top.right {
+	z-index: 1;
+	background: pink;
+	position: absolute;
+border-bottom-right-radius:40px;
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 50px;
+	z-index: -1;
+}
+
+#Y .bottom.vertical{
+	z-index: 99;
+	position: absolute;
+	background: red;
+	width: 20px;
+	height: 40px;
+	left:35px;
+	top: 40px;
+}
+
+#Y .top.left {
+	background: black;
+	position: absolute;
+	border-bottom-left-radius:40px;
+	/* border-bottom-right-radius:40px; */
+	height: 40px;
+	width: 40px;
+	width:
+	left: 0px;
+	top: 0px;
+}
+
+#Y .horizontal.bottom {
+border-bottom-right-radius:40px;
+	width: 40px;
+	height: 40px;
+	top: 40px;
+	left: 50px;
+	z-index: -1;
+}
+
+/* z */
+
+#Z .vertical {
+	width: 40px;
+	height: 40px;
+
+	position: absolute;
+}
+
+#Z .horizontal {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+
+#Z .horizontal.right {
+	background: red;
+	top: 0px;
+	left: 0px;
+}
+
+
+#Z .vertical.right {
+	z-index: 44;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 40px 0 0;
+	border-color: #007bff transparent transparent transparent;
+left: 50px;
+top: 0px;
+position: absolute;
+}
+
+
+#Z .horizontal.left {
+z-index: 3;
+left: 0px;
+top: 40px;
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 40px 40px;
+border-color: transparent transparent black transparent;
+}
+
+#Z .horizontal.bottom {
+	bottom: 0px;
+	left: 50px;
+	background: red;
+
+}
+
+
+
+
+
+
+
+
+
+/* Alternative A using Multiple Gradients */
+
+#alt-a {
+	background: black;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, white 1px, transparent 0px), radial-gradient(white 0%, black 70%);
+    background-size: 200px 140px, 200px 200px;
+    background-position: 99px 160px, 0px 0px;
+    border-radius: 100px 100px 0px 0px;
+}

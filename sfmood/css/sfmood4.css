@@ -15,9 +15,27 @@ body {
 
 }
 
-img{
-  position:absolute;
+.img1,.img4{
+  margin-bottom: 100px;
+  display: block;
+  position:relative;
   left: 560px;
+}
+
+.img3{
+  margin-bottom: 100px;
+  display: block;
+  position:relative;
+  left: 470px;
+}
+
+#ThreeImg{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: inline-inline-block;
+  left: 400px;
+  position: relative;
+
 }
 #oneto9{
   top: 450px;
@@ -82,7 +100,7 @@ background-position: 50% 50%; */
     font-style: normal;
     font-size: 30px;
     text-align: left;
-    color: rgb(220, 146, 101);
+    color: rgb(223, 158, 117);
   }
 
   .explanation{

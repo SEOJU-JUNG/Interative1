@@ -1,51 +1,119 @@
 body {
+	margin: 0;
+	padding: 0;
 
 }
 
+#grey1{
+	height: 100vh;
+	width:40vw;
+	background: rgba(0, 0, 0, 0.05);
+	z-index:-10;
+	position: absolute;
+}
+
+.letter-container{
+	z-index: 10;
+	filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.3));
+	top: 0px;
+	align-items: center;
+	background-color: white;
+	width: 85vw;
+	height: 47.8vw;
+	margin: 0px auto;
+	/* border: 5px solid #ccc; */
+	/* border-right: 5px solid #ccc;
+	border-bottom: 5px solid #999; */
+}
+.letter-center{
+	/* position: absolute;
+	left: 50%;
+	margin-left: -470px; */
+}
+.letter-scale{
+	transform: scale(0.7);
+	transform-origin: center center;
+}
+
+.letter-width{
+	padding-top: 9vw;
+	width: 90vw;
+	/* padding-left: 4vw;
+	margin-left:  -4vw;
+	padding-top: 4vw; */
+	letter-spacing: 0;
+}
 .letter {
 	width: 90px;
 	height: 80px;
 	position: relative;
-	display: inline-block;
-	margin: 20px;
+	float: left;
+	margin: 30px;
 }
-
-/* pieces */
-
-#A .horizontal {
-	width: 40px;
-	height: 40px;
-	background: red;
-	position: absolute;
-}
-
-  #A .vertical {
-	width: 40px;
-	height: 40px;
-	background: blue;
-	position: absolute;
-}
-
-
 
 
 /* A */
+#Both-A{
+	position: relative;
+}
+#Both-A:hover .left{
+	transform: scaleY(0);
+}
+#Both-A:hover .right{
+	transform: scaleY(0);
+}
+#Both-A:hover .top{
+	transform: scaleX(0);
+}
+#Both-A:hover .left2{
 
-/*
-style the left
-vertical stroke in
-'A' by combining
-classes
-*/
+	animation: scaleYprss 400ms forwards;
+
+}
+#Both-A:hover .top2{
+
+	animation: scaleXprss 400ms forwards;
+}
+
+
+#A .horizontal {
+	/* background: red; */
+	background: black;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+  #A .vertical {
+		/* background: blue; */
+		background: black;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+
+
+#A .vertical.right {
+	border-top-right-radius:40px;
+	right: 0px;
+	top: 0px;
+	height: 80px;
+	transition: transform 100ms;
+
+	transform-origin:0px 40px;
+}
+
 
 #A .horizontal.top {
-border-top-right-radius:40px;
-border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	border-top-left-radius:40px;
 	width: 90px;
 	height: 40px;
 	top: 0px;
 	left: 0px;
-	z-index: -1;
+	z-index: 1;
+	transition: transform 100ms;
+	transition-delay: 100ms;
+	transform-origin: 40px 0px;
 }
 
 #A .vertical.left {
@@ -53,40 +121,46 @@ border-top-left-radius:40px;
 	height: 80px;
 	left: 0px;
 	top: 0px;
-}
-
-#A .vertical.right {
-	border-top-right-radius:40px;
-	right: 0px;
-	top: 0px;
-	height: 80px;
+	transition: transform 100ms;
+	transition-delay: 200ms;
+	transform-origin:0px 80px;
 }
 
 
 
-
-/*
-
-#A .vertical {
-	background-image: repeating-linear-gradient(to right, transparent, transparent 5px, #fff 5px, #fff 7px, transparent 7px);
-}
-
-#A .horizontal {
-	background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #fff 5px, #fff 7px, transparent 7px);
-}
-
-*/
 
 /* B */
-
-#B .horizontal, #B .vertical{
-	background: blue;
+#Both-B{
+	position: relative;
+}
+#Both-B:hover .left{
+	transform: scale(0);
+}
+#Both-B:hover .right{
+	transform: scale(0);
+}
+#Both-B:hover .bottom{
+	transform: scaleY(0);
 }
 
+#Both-B:hover .left2{
+	animation: scaleYprss 400ms forwards;
+}
+#Both-B:hover .middle2{
+	animation: scaleXprss 400ms forwards;
+}
+
+#Both-B:hover .right2{
+	animation: scaleYprss 400ms forwards;
+}
+
+
+
 #B .vertical {
+		/* background: red;	 */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -94,9 +168,10 @@ border-top-left-radius:40px;
 }
 
 #B .horizontal {
+	/* background: red; */
+	background: black;
 	width: 40px;
-	height: 40px;
-	background: red;
+	height: 80px;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -108,128 +183,104 @@ border-top-left-radius:40px;
 	top: 40px;
 	border-radius: 40px;
 	z-index: 1;
+	transition: transform 150ms;
+	transform-origin: 50%;
+
+
 }
 
 #B .vertical.right {
 	right: 0px;
 	top: 0px;
 	border-radius: 40px;
+	transition: transform 150ms;
+	transition-delay: 150ms;
+	transform-origin: 50%;
 }
-
-#B .horizontal.top {
-	top: 0px;
-	left: 0px;
-
-}
-
 
 
 #B .horizontal.bottom {
 	bottom: 0px;
 	left: 0px;
-
+	transition: transform 100ms;
+	transform-origin: bottom;
+	transition-delay: 300ms;
 }
 
-#B .b-intersect {
-	width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 20px solid #fff;
-    border-bottom: 15px solid transparent;
 
-    position: absolute;
-
-    top: 135px;
-    right: 0px;
+/* C */
+#Both-C{
+	position: relative;
+}
+#Both-C:hover .top{
+	transform: rotate(90deg);
+	margin-bottom: -10px;
+	opacity: 0;
+}
+#Both-C:hover .bottom{
+	transform: rotate(90deg);
+	margin-left: -10px;
+	opacity: 0;
 }
 
-#B_Korean .horizontal_B {
-	background: pink;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	float: left;
-  display: inline;
+#Both-C:hover .left{
+	transform: scaleY(0);
 }
+/* -- for ko*/
 
-#B_Korean .vertical_B {
-	background: pink;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	float: left;
-  display: inline;
-}
-
-#B_Korean .horizontal_B.top_B {
-
-	width: 90px;
-	height: 40px;
-	top: 40px;
-	left: 0px;
-	z-index: -1;
-}
-
-#B_Korean .vertical_B.left_B {
-
-	height: 80px;
-	left: 0px;
-	top: 0px;
-}
-
-#B_Korean .vertical_B.right_B {
-	right: 0px;
-	top: 0px;
-	height: 80px;
-}
-
+#Both-C:hover .left2{
+	animation: scaleYprss 400ms forwards;
+	animation-delay: 500ms;
 /*
-#B .horizontal{
-	background: magenta;
-	mix-blend-mode: multiply;
+	transform: scaleY(0); */
 }
 
-#B .vertical {
-	background: cyan;
-	mix-blend-mode: screen;
+#Both-C:hover .bottom2{
+	animation: CBttm2prss 450ms forwards;
+	animation-delay: 680ms;
+/*
+	transform: rotate(90deg);
+	margin-left: 10px;
+	opacity: 0; */
 }
-*/
+
+#Both-C:hover .top2{
+	animation: CBtp2prss 450ms forwards;
+	animation-delay: 900ms;
+	/*
+	transform: rotate(90deg);
+	margin-bottom: 10px;
+	opacity: 0; */
+}
 
 #C .vertical {
+	/* background: blue; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: blue;
 	position: absolute;
 }
 
 #C .horizontal {
+	/* background: red; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
-
-
-
+/* -- */
 #C .horizontal.top {
-border-top-right-radius:40px;
-
+	border-top-right-radius:40px;
 	width: 40px;
 	height: 35px;
 	top: 0px;
 	left: 50px;
 	z-index: -1;
+	transform-origin: 0% 100%;
+  transition-property: transform, margin-bottom, opacity;
+	transition-duration: 250ms, 250ms, 250ms;
+	transition-delay: 0ms, 0ms, 0ms;
 }
-
-#C .vertical.left {
-	border-top-left-radius:40px;
-	border-bottom-left-radius:40px;
-	height: 80px;
-	left: 0px;
-	top: 0px;
-}
-
-
 
 #C .horizontal.bottom {
 border-bottom-right-radius:40px;
@@ -238,52 +289,96 @@ border-bottom-right-radius:40px;
 	top: 45px;
 	left: 50px;
 	z-index: -1;
+	transform-origin: 0% 0%;
+  transition-property: transform, margin-left, opacity;
+	transition-duration: 250ms, 250ms, 250ms;
+	transition-delay: 100ms, 100ms, 100ms;
 }
 
 
+#C .vertical.left {
+	border-bottom-left-radius:40px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+	transform-origin: 0% 0%;
+	transition-property: transform;
+	transition-duration: 200ms;
+	transition-delay: 280ms;
+}
 
+/* D */
+#Both-D{
+	position: relative;
+}
+#Both-D:hover .right{
+	transform: translateX(-50px);
+	opacity: 0;
+}
+#Both-D:hover .left{
+	transform: scaleY(0);
+
+}
+
+#Both-D:hover .left{
+	transform: scaleY(0);
+}
+
+/* -- for ko*/
+/* vertical */
+#Both-D:hover .left2{
+		animation: scaleYprss 500ms forwards;
+		animation-delay: 400ms;
+}
+/* hori */
+#Both-D:hover .bottom2{
+	animation: scaleXprss 400ms forwards;
+	animation-delay: 600ms;
+}
+
+#Both-D:hover .top2{
+		animation: scaleXprss 300ms forwards;
+		animation-delay: 900ms;
+}
+
+/* ---- */
 #D .vertical {
+	/* background: blue; */
+	background: black;
 	width: 40px;
-	height: 40px;
-	background: blue;
+	height: 80px;
 	position: absolute;
 }
-
-#D .horizontal {
-	width: 40px;
-	height: 40px;
-	background: red;
-	position: absolute;
-}
-
-#D .vertical.left {
-	left: 50px;
-	top: 40px;
-}
-
+/* --- */
 #D .vertical.right {
 	border-top-right-radius: 40px;
 	right: 0px;
 	top: 0px;
+	transition-property: opacity, transform;
+	transition-duration: 500ms,250ms;
+	transition-delay: 0ms;
 }
 
-#D .horizontal.top {
-	top: 0px;
+#D .vertical.left {
 	left: 0px;
+	transform-origin: 0% 100%;
+	transition-property: transform;
+	transition-duration: 50ms;
+	transition-delay: 350ms;
 }
 
-#D .horizontal.bottom {
-	bottom: 0px;
-	left: 0px;
-}
+
+
+
 
 /* E */
 
 #E .vertical {
+	/* background: red; */
+	background: black;
 	color: red;
 	width: 40px;
 	height: 35px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -291,10 +386,10 @@ border-bottom-right-radius:40px;
 }
 
 #E .horizontal {
-	color: blue;
+	/* background: red; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -312,12 +407,6 @@ border-bottom-right-radius:40px;
 	top: 0px;
 }
 
-#E .horizontal.top {
-	top: 0px;
-	left: 0px;
-}
-
-
 #E .horizontal.bottom {
 	bottom: 0px;
 	left: 0px;
@@ -326,10 +415,10 @@ border-bottom-right-radius:40px;
 /* F */
 
 #F .vertical {
-	color: red;
+	/* background: red; */
+	background: black;
 	width: 40px;
 	height: 35px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -337,21 +426,15 @@ border-bottom-right-radius:40px;
 }
 
 #F .horizontal {
-	color: blue;
+	/* background: red; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
 	z-index: 1;
 }
-
-/* #F .vertical.left {
-	left: 50px;
-	top: 45px;
-	z-index: 1;
-} */
 
 #F .vertical.right {
 	right: 0px;
@@ -363,7 +446,6 @@ border-bottom-right-radius:40px;
 	left: 0px;
 }
 
-
 #F .horizontal.bottom {
 	bottom: 0px;
 	left: 0px;
@@ -372,26 +454,27 @@ border-bottom-right-radius:40px;
 /* G */
 
 #G .vertical {
+	/* background: blue; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: blue;
 	position: absolute;
 }
 
 #G .horizontal {
-	width: 50px;
+	/* background: red; */
+	background: black;
+	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
 
 #G .horizontal.top {
-border-top-right-radius:40px;
-
-	width: 50px;
+	border-top-right-radius:40px;
+	width: 40px;
 	height: 35px;
 	top: 0px;
-	left: 40px;
+	left: 50px;
 	z-index: -1;
 }
 
@@ -404,28 +487,29 @@ border-top-right-radius:40px;
 }
 
 #G .horizontal.bottom {
-
-border-bottom-left-radius:40px;
-	width: 50px;
+  border-bottom-left-radius:40px;
+	width: 40px;
 	height: 35px;
 	top: 45px;
-	left: 40px;
+	left: 50px;
 	z-index: -1;
 }
 
 /* H */
 
 #H .vertical {
+	/* background: blue; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: blue;
 	position: absolute;
 }
 
-#H .horizontal {
+#H .horizontal{
+	/* background: red; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
 
@@ -451,7 +535,7 @@ border-bottom-left-radius:40px;
 
 #H .middle {
 	position: absolute;
-	background-color: red;
+	background-color: black;
 	top: 30px;
 	left: 0px;
 	z-index: 99;
@@ -462,10 +546,11 @@ border-bottom-left-radius:40px;
 /* I */
 
 #I .vertical {
+	/* background: red; */
+	background: black;
 	color: red;
 	width: 40px;
 	height: 80px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -473,21 +558,15 @@ border-bottom-left-radius:40px;
 }
 
 #I .horizontal {
-	color: blue;
+	/* color: blue; */
+	background-color: black;
 	width: 90px;
 	height: 20px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
 	z-index: 1;
 }
-
-/* #I .vertical.left {
-	left: 50px;
-	top: 45px;
-	z-index: 1;
-} */
 
 #I .vertical.right {
 	right: 25px;
@@ -508,10 +587,10 @@ border-bottom-left-radius:40px;
 /* J */
 
 #J .vertical {
-	color: red;
+	/* background: red; */
+	background: black;
 	width: 40px;
-	height: 45px;
-	background: red;
+	height: 40px;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -519,49 +598,36 @@ border-bottom-left-radius:40px;
 }
 
 #J .horizontal {
-	color: blue;
-	width: 90px;
-	height: 20px;
-	background: red;
+	/* background: red; */
+	background: black;
+	width: 40px;
+	height: 40px;
 	position: absolute;
 	float: left;
   display: inline-block;
 	z-index: 1;
 }
 
-/* #I .vertical.left {
-	left: 50px;
-	top: 45px;
-	z-index: 1;
-} */
-
 #J .vertical.right {
 	right: 0px;
 	top: 0px;
 }
 
-/* #J .horizontal.top {
-	top: 0px;
-	left: 0px;
-} */
-
-
 #J .horizontal.bottom {
 	border-bottom-left-radius:40px;
-	width: 45px;
-	height: 35px;
-	top: 45px;
+	width: 40px;
+	height: 40px;
+	top: 40px;
 	left: 0px;
 	z-index: -1;
 }
 
 #J .horizontal.bottom2 {
-background-color: pink;
-border-bottom-right-radius:40px;
-	width: 45px;
-	height: 35px;
-	top: 45px;
-	left: 45px;
+	border-bottom-right-radius:40px;
+	width: 40px;
+	height: 40px;
+	top: 40px;
+	left: 50px;
 	z-index: -1;
 }
 
@@ -569,23 +635,24 @@ border-bottom-right-radius:40px;
 /* K */
 
 #K .vertical {
+	/* background: blue; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: blue;
 	position: absolute;
 }
 
 #K .horizontal {
+	/* background: red; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
 
 
 
 #K .horizontal.top {
-	background-color: red;
 	border-top-left-radius:40px;
 	width: 40px;
 	height: 35px;
@@ -595,7 +662,6 @@ border-bottom-right-radius:40px;
 }
 
 #K .vertical.left {
-	background-color: red;
 	height: 80px;
 	left: 0px;
 	top: 0px;
@@ -614,10 +680,10 @@ border-bottom-right-radius:40px;
 /* L */
 
 #L .vertical {
-	color: red;
+	/* background: red; */
+	background: black;
 	width: 40px;
-	height: 35px;
-	background: red;
+	height: 80px;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -625,38 +691,26 @@ border-bottom-right-radius:40px;
 }
 
 #L .horizontal {
-	color: blue;
+	/* background: red; */
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
 	z-index: 1;
 }
 
-#L .vertical.left {
-	left: 50px;
-	top: 45px;
-	z-index: 1;
-}
-
-
-#L .horizontal.top {
-	top: 0px;
-	left: 0px;
-}
 
 
 #L .horizontal.bottom {
 	bottom: 0px;
-	left: 0px;
+	left: 50px;
 }
 
 /* M */
 
 #M .vertical {
-
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -664,8 +718,6 @@ border-bottom-right-radius:40px;
 }
 
 #M .horizontal {
-
-
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -673,7 +725,7 @@ border-bottom-right-radius:40px;
 }
 
 #M .vertical.left {
-	background: red;
+	background: black;
 	width: 40px;
 	height: 40px;
 	left: 50px;
@@ -686,7 +738,7 @@ border-bottom-right-radius:40px;
 height: 0;
 border-style: solid;
 border-width: 0 0 40px 40px;
-border-color: transparent transparent #007bff transparent;
+border-color: transparent transparent black transparent;
 	right: 0px;
 	top: 0px;
 }
@@ -696,16 +748,16 @@ border-color: transparent transparent #007bff transparent;
 height: 0;
 border-style: solid;
 border-width: 40px 0 0 40px;
-border-color: transparent transparent transparent #007bff;
+border-color: transparent transparent transparent black;
 	top: 0px;
 	left: 0px;
 }
 
 
 #M .horizontal.bottom {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	bottom: 0px;
 	left: 0px;
 }
@@ -713,7 +765,6 @@ border-color: transparent transparent transparent #007bff;
 /* N */
 
 #N .vertical {
-
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -721,8 +772,6 @@ border-color: transparent transparent transparent #007bff;
 }
 
 #N .horizontal {
-
-
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -730,7 +779,7 @@ border-color: transparent transparent transparent #007bff;
 }
 
 #N .vertical.left {
-	background: red;
+	background: black;
 	width: 40px;
 	height: 40px;
 	left: 50px;
@@ -741,7 +790,7 @@ border-color: transparent transparent transparent #007bff;
 #N .vertical.right {
 	width: 40px;
 	height: 40px;
-	background: red;
+	background: black;
 	right: 0px;
 	top: 0px;
 }
@@ -751,32 +800,33 @@ border-color: transparent transparent transparent #007bff;
 height: 0;
 border-style: solid;
 border-width: 40px 0 0 40px;
-border-color: transparent transparent transparent red;
+border-color: transparent transparent transparent black;
 	top: 0px;
 	left: 0px;
 }
 
 
 #N .horizontal.bottom {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	bottom: 0px;
 	left: 0px;
 }
 
 /* o */
 #O .vertical {
+	background: blue;
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: blue;
 	position: absolute;
 }
 
 #O .horizontal {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
 
@@ -821,22 +871,21 @@ border-bottom-right-radius:40px;
 /* P */
 
 #P .vertical {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
 
 #P .horizontal {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
 
 #P .horizontal.top {
-border-top-right-radius:40px;
-
+	border-top-right-radius:40px;
 	width: 40px;
 	height: 40px;
 	top: 0px;
@@ -853,16 +902,16 @@ border-top-right-radius:40px;
 
 /* Q */
 #Q .vertical {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: blue;
 	position: absolute;
 }
 
 #Q .horizontal {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
 
@@ -912,9 +961,9 @@ border-top-right-radius:40px;
 }
 
 #R .horizontal {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
 
@@ -923,13 +972,13 @@ width: 0;
 height: 0;
 border-style: solid;
 border-width: 40px 0 0 40px;
-border-color: transparent transparent transparent #007bff;
+border-color: transparent transparent transparent #black;
 	left: 50px;
 	top: 40px;
 }
 
 #R .vertical.right {
-	background: PINK;
+	background: black;
 	width: 40px;
 	height: 40px;
 	border-top-right-radius: 40px;
@@ -946,22 +995,22 @@ border-color: transparent transparent transparent #007bff;
 /* S */
 
 #S .vertical {
+	background: black;
 	width: 40px;
 	height: 35px;
-	background: blue;
 	position: absolute;
 }
 
 #S .horizontal {
+	background: black;
 	width: 40px;
 	height: 35px;
-	background: red;
 	position: absolute;
 }
 
 
 #S .vertical.right {
-	background: pink;
+
 	border-top-left-radius:40px;
 	height: 35px;
 	left: 10px;
@@ -970,7 +1019,6 @@ border-color: transparent transparent transparent #007bff;
 
 #S .vertical.left {
 	z-index: 99;
-	background: pink;
 	right: 0px;
 	top: 0px;
 	border-top-right-radius:40px;
@@ -979,14 +1027,12 @@ border-color: transparent transparent transparent #007bff;
 
 #S .horizontal.bottom2 {
 	z-index: 99;
-	background: pink;
 	right: 50px;
 	top: 45px;
 	border-bottom-left-radius:40px;
 }
 
 #S .horizontal.bottom {
-	background: pink;
 	border-bottom-right-radius:40px;
 	height: 35px;
 	left: 40px;
@@ -996,10 +1042,9 @@ border-color: transparent transparent transparent #007bff;
 /* T */
 
 #T .vertical {
-	color: red;
+background: black;
 	width: 40px;
 	height: 80px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
@@ -1007,21 +1052,15 @@ border-color: transparent transparent transparent #007bff;
 }
 
 #T .horizontal {
-	color: blue;
+background: black;
 	width: 90px;
 	height: 20px;
-	background: red;
 	position: absolute;
 	float: left;
   display: inline-block;
 	z-index: 1;
 }
 
-/* #I .vertical.left {
-	left: 50px;
-	top: 45px;
-	z-index: 1;
-} */
 
 #T .vertical.right {
 	right: 25px;
@@ -1037,20 +1076,18 @@ border-color: transparent transparent transparent #007bff;
 /* U */
 
 #U .vertical {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: blue;
 	position: absolute;
 }
 
 #U .horizontal {
+	background: black;
 	width: 40px;
 	height: 40px;
-	background: red;
 	position: absolute;
 }
-
-
 
 #U .vertical.right {
 	border-top-left-radius:40px;
@@ -1075,32 +1112,24 @@ border-bottom-right-radius:40px;
 	top: 0px;
 	left: 50px;
 	z-index: 1;
-	background: pink;
 }
 
-/* V */
-
-
-/* #V .vertical {
-	width: 40px;
-	height: 40px;
-	background: blue;
-	position: absolute;
-} */
 
 
 #V .vertical.right {
+
 width: 0;
 height: 0;
 border-style: solid;
 border-width: 0 40px 40px 0;
-border-color: transparent #007bff transparent transparent;
+border-color: transparent black transparent transparent;
 left: 0px;
 top: 40px;
 position: absolute;
 }
 
 #V .horizontal.bottom {
+
 	left: 50px;
 	top: 40px;
 	position: absolute;
@@ -1110,7 +1139,7 @@ position: absolute;
 height: 0;
 border-style: solid;
 border-width: 40px 40px 0 0;
-border-color: #007bff transparent transparent transparent;
+border-color: black transparent transparent transparent;
 }
 
 #V .horizontal.bottom3 {
@@ -1119,7 +1148,7 @@ border-color: #007bff transparent transparent transparent;
 	top: 0px;
 	left: 50px;
 	z-index: 1;
-	background: pink;
+	background: black;
 }
 
 #V .horizontal.bottom2 {
@@ -1128,9 +1157,11 @@ border-color: #007bff transparent transparent transparent;
 	top: 0px;
 	left: 50px;
 	z-index: 1;
-	background: pink;
+	background: black;
 	position: absolute;
 }
+
+
 
 /* W */
 #W .vertical.right {
@@ -1140,7 +1171,7 @@ width: 0;
 height: 0;
 border-style: solid;
 border-width: 40px 40px 0 0;
-border-color: #007bff transparent transparent transparent;
+border-color: black transparent transparent transparent;
 left: 0px;
 top: 40px;
 position: absolute;
@@ -1154,7 +1185,7 @@ width: 0;
 height: 0;
 border-style: solid;
 border-width: 0 40px 40px 0;
-border-color: transparent #007bff transparent transparent;
+border-color: transparent black transparent transparent;
 }
 
 #W  .horizontal.bottom3 {
@@ -1163,7 +1194,7 @@ border-color: transparent #007bff transparent transparent;
 	top: 0px;
 	left: 50px;
 	z-index: 1;
-	background: pink;
+	background: black;
 }
 
 #W  .horizontal.bottom2 {
@@ -1172,7 +1203,7 @@ border-color: transparent #007bff transparent transparent;
 	top: 0px;
 	left: 50px;
 	z-index: 1;
-	background: pink;
+	background: black;
 	position: absolute;
 }
 
@@ -1183,7 +1214,7 @@ border-color: transparent #007bff transparent transparent;
 	height: 0;
 	border-style: solid;
 	border-width: 0 0 40px 40px;
-	border-color: transparent transparent #007bff transparent;
+	border-color: transparent transparent black transparent;
 left: 0px;
 top: 40px;
 position: absolute;
@@ -1197,7 +1228,7 @@ width: 0;
 height: 0;
 border-style: solid;
 border-width: 40px 0 0 40px;
-border-color: transparent transparent transparent #007bff;
+border-color: transparent transparent transparent black ;
 }
 
 #X  .top.left {
@@ -1207,7 +1238,7 @@ border-color: transparent transparent transparent #007bff;
 height: 0;
 border-style: solid;
 border-width: 0 40px 40px 0;
-border-color: transparent #007bff transparent transparent;
+border-color: transparent black  transparent transparent;
 }
 
 #X  .top.right {
@@ -1215,7 +1246,7 @@ border-color: transparent #007bff transparent transparent;
 	height: 0;
 	border-style: solid;
 	border-width: 40px 40px 0 0;
-	border-color: #007bff transparent transparent transparent;
+	border-color: black  transparent transparent transparent;
 	top: 0px;
 	left: 50px;
 	position: absolute;
@@ -1227,7 +1258,7 @@ border-color: transparent #007bff transparent transparent;
 
 #Y .top.right {
 	z-index: 1;
-	background: pink;
+	background: black;
 	position: absolute;
 border-bottom-right-radius:40px;
 	width: 40px;
@@ -1240,7 +1271,7 @@ border-bottom-right-radius:40px;
 #Y .bottom.vertical{
 	z-index: 99;
 	position: absolute;
-	background: red;
+	background: black;
 	width: 20px;
 	height: 40px;
 	left:35px;
@@ -1273,7 +1304,6 @@ border-bottom-right-radius:40px;
 #Z .vertical {
 	width: 40px;
 	height: 40px;
-
 	position: absolute;
 }
 
@@ -1284,7 +1314,7 @@ border-bottom-right-radius:40px;
 }
 
 #Z .horizontal.right {
-	background: red;
+	background: black;
 	top: 0px;
 	left: 0px;
 }
@@ -1296,7 +1326,7 @@ border-bottom-right-radius:40px;
 	height: 0;
 	border-style: solid;
 	border-width: 40px 40px 0 0;
-	border-color: #007bff transparent transparent transparent;
+	border-color: black  transparent transparent transparent;
 left: 50px;
 top: 0px;
 position: absolute;
@@ -1318,9 +1348,10 @@ border-color: transparent transparent black transparent;
 #Z .horizontal.bottom {
 	bottom: 0px;
 	left: 50px;
-	background: red;
+background: black;
 
 }
+
 
 
 

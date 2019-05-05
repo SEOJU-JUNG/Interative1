@@ -468,7 +468,7 @@ font-size: 13px;
       width: 100vw;
       /* background: red; */
       text-align: center;
-      line-height: 3.6em;
+      line-height: 2em;
     }
     .img-all-M{
       /* margin-bottom: 100px; */
@@ -476,12 +476,6 @@ font-size: 13px;
       position:relative;
     }
 
-    #ThreeImg-M{
-      /* margin-top: 100px; */
-      display: inline;
-      /* left: 600px; */
-      position: relative;
-    }
 
     .video1-M{
       /* margin-bottom: 100px; */

@@ -202,13 +202,16 @@ position: absolute;
       overflow: hidden;
     }
     #moblie-img{
-      width: 710px;
+      width: 400px;
       height: auto;
       position: absolute;
       top: 160px;
       left: 50%;
-      margin-left: -400px
+      margin-left: -200px;
+      z-index: 2;
     }
+
+
 
     #Sfmood{
       margin-top: 15px;

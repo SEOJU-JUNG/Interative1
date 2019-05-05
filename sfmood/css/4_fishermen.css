@@ -22,6 +22,9 @@ color: #13d0f3;
 font-family: futura-pt-bold, sans-serif;
 font-weight: 700;
 font-style: normal;
+text-decoration: none;
+text-decoration-color: none;
+font-style: normal;
 }
 /* menu_Nav */
 .menu{
@@ -47,16 +50,16 @@ span{
   text-decoration: none;
 }
 
-a {
+.map {
   color:#13d0f3;
   text-decoration: none;
 }
-a:hover{
+.map:hover{
 
   color: white;
   text-shadow: 0 0 2px #23d0f3;
 }
-span:hover{
+.map:hover{
   color: white;
   text-shadow: 0 0 2px #23d0f3;
 }
@@ -103,7 +106,7 @@ span:hover{
   color: #ef9366;
 }
 
-/* imges */
+/* img for desk */
 
 .img-container{
   width: 100vw;
@@ -152,26 +155,9 @@ color: #707070;
 text-transform: uppercase;
 }
 
-/* margin: 0px;
-padding: 0px;
-position: absolute;
-display: inline-block;
-top:150px;
-width: 250px;
-height: 50px;
-left: 6vw;
-text-align: left; */
 
 
 
-/* .aa{
-
-  font-family: acumin-pro, sans-serif;
-  font-weight: lighter;
-  font-style: normal;
-  font-size: 13px;
-  color: #707070;
-} */
 
 .aa{
   font-family: acumin-pro, sans-serif;
@@ -182,6 +168,7 @@ text-align: left; */
   margin: 0;
   padding: 0;
   display: inline-block;
+  text-decoration: none;
 }
 
 
@@ -386,7 +373,7 @@ font-size: 13px;
     /* location-list */
     .location-list-button{
       font-size: 2em;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
     #location{
       cursor: pointer;
@@ -406,11 +393,11 @@ font-size: 13px;
 
       width: 100vw;
       height: 100vh;
-      background-color: rgba(125,125,125,0.8);
+      background-color: rgba(255,255,255,0.9);
       z-index: 1000;
-
-      font-size: 1.6em;
-      line-height: 1.9em;
+      text-transform: uppercase;
+      font-size: 1.3em;
+      line-height: 2.2em;
       color: black;
       font-weight: 500;
 

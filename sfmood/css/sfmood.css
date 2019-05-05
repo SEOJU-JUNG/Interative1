@@ -9,20 +9,28 @@ body {
 
 }
 #desktop {
-background-color: white;
-width: 100vw;
-height:100vh;
-background-image:  url("../map.png");
-background-repeat:no-repeat;
-background-size: contain;
-background-position: 50% 50%;
+  background-color: white;
+  width: 100vw;
+  height:100vh;
+  overflow: hidden;
+  position: relative;
 }
 
-.Sfmood{
+#desktop-img{
+  position: absolute;
+  width: 1540px;
+  height: auto;
+  left: 50%;
+  top: -50px;
+  margin-left: -780px;
+}
+
+#Sfmood{
   margin-top: 15px;
 font-size: 70px;
 text-align: center;
-color: #0B0A0A;
+color: #13d0f3;
+/* skyblue */
 font-family: futura-pt-bold, sans-serif;
 font-weight: 700;
 font-style: normal;
@@ -30,81 +38,129 @@ font-style: normal;
 
 
 span{
+  color:#13d0f3;
   padding-left:7px;
   padding-right:7px;
+  text-decoration: none;
 }
 
-a{
-  color: #0B0A0A;
+a {
+  color:#13d0f3;
   text-decoration: none;
 }
 a:hover{
-  color: #47d0f3;
+
+  color: white;
+  text-shadow: 0 0 2px #23d0f3;
 }
 span:hover{
-  color: #47d0f3;
+  color: white;
+  text-shadow: 0 0 2px #23d0f3;
 }
 
 .menu{
   top:85px;
   width: 700px;
   height: 50px;
-  position:fixed;
-left: 50%;
-margin-left: calc(-700px/2);
+  left: 50%;
+  margin-left: calc(-700px/2);
 font-size: 40px;
 text-align: center;
-color: #0B0A0A;
+
 font-family: acumin-pro-condensed, sans-serif;
 font-weight: 700;
 font-style: normal;
+position: absolute;
 }
-
+/* start loc-container */
+.loc{
+  position: absolute;
+  left: 50%;
+}
+.loc-1{
+  top: 293px;
+  margin-left: 276px;
+}
+.loc-2{
+  top: 374px;
+  margin-left: 410px;
+}
+.loc-3{
+  top: 391px;
+  margin-left: 270px;
+}
+.loc-4{
+  top: 509px;
+  margin-left: 303px;
+}
+.loc-5{
+  top: 492px;
+  margin-left: 416px;
+}
+.loc-6{
+  top: 608px;
+  margin-left: 401px;
+}
+.loc-7{
+  top: 689px;
+  margin-left: 303px;
+}
+.loc-8{
+  top: 789px;
+  margin-left: 323px;
+}
+.loc-9{
+  top: 719px;
+  margin-left: 87px;
+}
+/* end loc-container */
 .FISHERMEN,.RUSSIAN,.TELEGRAPH,.NOB,.CHINA,.UNION,
-.CIVIC,.MARKET{
+.CIVIC,.MARKET,.ALAMO{
+  color: #0B0A0A;
   display: inline-block;
   font-family: acumin-pro, sans-serif;
   font-weight: 300;
   font-size: 0.9em;
+  text-decoration: none;
+
 }
-.FISHERMEN:hover{
+/* hover color */
+.FISHERMEN:hover,.RUSSIAN:hover,.TELEGRAPH:hover,
+.NOB:hover,.CHINA:hover,.UNION:hover,
+.CIVIC:hover,.MARKET:hover,.ALAMO:hover{
+  color: #0B0A0A;
   font-weight: bold;
-  color: #dc9265;
+  text-decoration: none;
+  text-shadow: none;
+
+  /* color: #dc9265; */
 }
 
-.RUSSIAN:hover{
-  color: #66789e;
+/* .FISHERMEN:hover,.RUSSIAN,.TELEGRAPH,.NOB,.CHINA,.UNION,
+.CIVIC,.MARKET,.ALAMO{
+  color: #0B0A0A;
   font-weight: bold;
-}
-.TELEGRAPH:hover{
-  color: #66789e;
-  font-weight: bold;
-}
-.NOB:hover{
-  color: #66789e;
-  font-weight: bold;
-}
+  text-decoration: none; */
 
-.CHINA:hover{
-  color: #e95e5c;
-  font-weight: bold;
-}
+/* footer for desktop */
+  footer {
 
-.UNION:hover{
-  color: #262a5b;
-  font-weight: bold;
-}
-.CIVIC:hover{
-  color: #262a5b;
-  font-weight: bold;
-}
-.MARKET:hover{
-  color: #262a5b;
-  font-weight: bold;
-}
+  text-align: center;
+  background-color: #13d0f3;
+  padding: 15px;
 
-
-
+  font-family: acumin-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  border-top:3px solid white;
+  z-index: -1;
+  }
 
 #tablet,
 #mobile,
@@ -126,105 +182,165 @@ font-style: normal;
         display: none;
     }
 } */
+
+
+
+
+
+
+
 /* mobile */
 @media (max-width: 670px) {
     body {
         background: white;
     }
     #mobile {
-
       display: inline;
       width: 100vw;
       height:100vh;
-      background-image: url("../map2.png");
-      background-size: contain;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
       position: absolute;
+      overflow: hidden;
+    }
+    #moblie-img{
+      width: 700px;
+      height: auto;
+      position: absolute;
+      top: 160px;
+      left: 50%;
+      margin-left: -400px
     }
 
-    .Sfmood{
-    font-size: 70px;
+    #Sfmood{
+      margin-top: 15px;
+    font-size: 60px;
     text-align: center;
-    color: #0B0A0A;
+    color: #13d0f3;
+    /* skyblue */
     font-family: futura-pt-bold, sans-serif;
     font-weight: 700;
     font-style: normal;
     }
 
-
+    /* start loc-container-M */
+    .loc-M{
+      position: absolute;
+      left: 50%;
+    }
+    .loc-1-M{
+      top: 233px;
+      margin-left: -10px;
+    }
+    .loc-2-M{
+      top: 269px;
+      margin-left: 88px;
+    }
+    .loc-3-M{
+      top: 283px;
+      margin-left: -48px;
+    }
+    .loc-4-M{
+      top: 373px;
+      margin-left: -9px;
+    }
+    .loc-5-M{
+      top: 363px;
+      margin-left: 86px;
+    }
+    .loc-6-M{
+      top: 458px;
+      margin-left: 62px;
+    }
+    .loc-7-M{
+      top: 523px;
+      margin-left: -26px;
+    }
+    .loc-8-M{
+      top: 583px;
+      margin-left: 31px;
+    }
+    .loc-9-M{
+      top: 541px;
+      margin-left: -175px;
+    }
+    /* end loc-container-M */
     span{
+      color:#13d0f3;
       padding-left:7px;
       padding-right:7px;
+      text-decoration: none;
     }
 
-    a{
-      color: #0B0A0A;
+    a {
+      color:#13d0f3;
       text-decoration: none;
     }
     a:hover{
-      color: #47d0f3;
+
+      color: white;
+      text-shadow: 0 0 2px #23d0f3;
     }
     span:hover{
-      color: #47d0f3;
+      color: white;
+      text-shadow: 0 0 2px #23d0f3;
     }
 
     .menu{
-      top:70px;
+      top:75px;
       width: 700px;
       height: 50px;
-      position: absolute;
       left: 50%;
       margin-left: calc(-700px/2);
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    color: #0B0A0A;
+
     font-family: acumin-pro-condensed, sans-serif;
     font-weight: 700;
     font-style: normal;
+    position: absolute;
     }
+
+
 
     .FISHERMEN,.RUSSIAN,.TELEGRAPH,.NOB,.CHINA,.UNION,
-    .CIVIC,.MARKET{
+    .CIVIC,.MARKET,.ALAMO{
+      color: #0B0A0A;
       display: inline-block;
       font-family: acumin-pro, sans-serif;
-      font-weight: 300;
-      font-size: 0.9em;
+      font-weight: 400;
+      font-size: 0.75em;
+      text-decoration: none;
+
     }
-    .FISHERMEN:hover{
+    /* hover color */
+    .FISHERMEN:hover,.RUSSIAN:hover,.TELEGRAPH:hover,
+    .NOB:hover,.CHINA:hover,.UNION:hover,
+    .CIVIC:hover,.MARKET:hover,.ALAMO:hover{
+      color: #0B0A0A;
       font-weight: bold;
-      color: #dc9265;
+      text-decoration: none;
+      text-shadow: none;
+
+      /* color: #dc9265; */
     }
 
-    .RUSSIAN:hover{
-      color: #66789e;
-      font-weight: bold;
-    }
-    .TELEGRAPH:hover{
-      color: #66789e;
-      font-weight: bold;
-    }
-    .NOB:hover{
-      color: #66789e;
-      font-weight: bold;
-    }
+    /* footer for mobile */
 
-    .CHINA:hover{
-      color: #e95e5c;
-      font-weight: bold;
-    }
+    footer {
 
-    .UNION:hover{
-      color: #262a5b;
-      font-weight: bold;
-    }
-    .CIVIC:hover{
-      color: #262a5b;
-      font-weight: bold;
-    }
-    .MARKET:hover{
-      color: #262a5b;
-      font-weight: bold;
+    text-align: center;
+    background-color: #13d0f3;
+    padding: 15px;
+
+    font-family: acumin-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 100;
     }
 
     #desktop,
@@ -232,19 +348,6 @@ font-style: normal;
     #print {
         display: none;
     }
-}
-/* print */
-@media print {
-    body {
-        background: white;
-    }
-    #print {
-        display: inline;
-        color: black;
-    }
-    #desktop,
-    #tablet,
-    #mobile {
-        display: none;
-    }
+
+
 }

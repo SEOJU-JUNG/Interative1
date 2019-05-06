@@ -369,14 +369,60 @@ border-bottom-right-radius:40px;
 
 
 
-
-
 /* E */
 
-#E .vertical {
-	/* background: red; */
+	#Both-E:hover .left{
+		transform: scaleY(0.44);
+		margin-left: 50px;
+		opacity: 0;
+	}
+	#Both-E:hover .bottom{
+		transform: translateY(-40px);
+		opacity: 0;
+	}
+	#Both-E:hover .top{
+		transform: scale(0);
+	}
+	/* ---ko */
+	#Both-E:hover .right2{
+		animation: scaleYprss 300ms forwards;
+		animation-delay: 900ms;
+	}
+
+	#Both-E:hover .left2{
+		animation: E2lprss 600ms forwards;
+		animation-delay: 900ms;
+	}
+	@keyframes E2lprss {
+		0%{
+			transform: translateX(11px) scaleY(0);
+		}
+		50%{
+			transform: translateX(11px) scaleY(1);
+		}
+		100%{
+			transform: translateX(0px) scaleY(1);
+		}
+	}
+	#Both-E:hover .middle2{
+		animation: scaleXprss 120ms forwards;
+		animation-delay: 1500ms;
+	}
+
+
+ #E .vertical {
 	background: black;
-	color: red;
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+
+}
+
+#E .horizontal {
+	background: black;
 	width: 40px;
 	height: 35px;
 	position: absolute;
@@ -385,71 +431,71 @@ border-bottom-right-radius:40px;
 	z-index: 1;
 }
 
-#E .horizontal {
-	/* background: red; */
-	background: black;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	float: left;
-  display: inline-block;
-	z-index: 1;
-}
 
 #E .vertical.left {
-	left: 50px;
-	top: 45px;
-	z-index: 1;
-}
-
-#E .vertical.right {
-	right: 0px;
 	top: 0px;
+	left: 0px;
+	transform-origin: 0% 100%;
+	transition-property: transform, margin-left, opacity;
+	transition-duration: 120ms, 200ms, 200ms;
+	transition-delay: 0ms, 150ms, 520ms;
 }
 
 #E .horizontal.bottom {
-	bottom: 0px;
-	left: 0px;
+	z-index: 3;
+	top: 45px;
+	left: 50px;
+	transition-property: transform, opacity;
+	transition-duration: 200ms, 80ms;
+	transition-delay: 520ms, 650ms;
 }
+
+
+#E .horizontal.top {
+	top: 0px;
+	left: 50px;
+	transform-origin: 50% 50%;
+	transition-property: transform;
+	transition-duration: 100ms;
+	transition-delay: 760ms;
+}
+
+
+
 
 /* F */
 
 #F .vertical {
-	/* background: red; */
-	background: black;
-	width: 40px;
-	height: 35px;
-	position: absolute;
-	float: left;
-  display: inline-block;
-	z-index: 1;
+ background: black;
+ width: 40px;
+ height: 80px;
+ position: absolute;
+ float: left;
+ display: inline-block;
+ z-index: 1;
 }
-
 #F .horizontal {
-	/* background: red; */
-	background: black;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	float: left;
-  display: inline-block;
-	z-index: 1;
+ background: black;
+ width: 40px;
+ height: 40px;
+ position: absolute;
+ float: left;
+ display: inline-block;
+ z-index: 1;
 }
 
-#F .vertical.right {
-	right: 0px;
+#F .vertical.left {
+
+	left: 0px;
 	top: 0px;
 }
 
 #F .horizontal.top {
+
 	top: 0px;
-	left: 0px;
+	left: 50px;
 }
 
-#F .horizontal.bottom {
-	bottom: 0px;
-	left: 0px;
-}
 
 /* G */
 
@@ -457,7 +503,7 @@ border-bottom-right-radius:40px;
 	/* background: blue; */
 	background: black;
 	width: 40px;
-	height: 40px;
+	height: 80px;
 	position: absolute;
 }
 
@@ -465,31 +511,24 @@ border-bottom-right-radius:40px;
 	/* background: red; */
 	background: black;
 	width: 40px;
-	height: 40px;
+	height: 35px;
 	position: absolute;
 }
-
-#G .horizontal.top {
-	border-top-right-radius:40px;
-	width: 40px;
-	height: 35px;
-	top: 0px;
-	left: 50px;
-	z-index: -1;
-}
-
+/* --- */
 #G .vertical.left {
-	border-top-left-radius:40px;
 	border-bottom-left-radius:40px;
-	height: 80px;
 	left: 0px;
 	top: 0px;
 }
 
-#G .horizontal.bottom {
+#G .horizontal.top {
+	border-top-right-radius:40px;
+	top: 0px;
+	left: 50px;
+	z-index: -1;
+}
+	#G .horizontal.bottom {
   border-bottom-left-radius:40px;
-	width: 40px;
-	height: 35px;
 	top: 45px;
 	left: 50px;
 	z-index: -1;
@@ -498,24 +537,20 @@ border-bottom-right-radius:40px;
 /* H */
 
 #H .vertical {
-	/* background: blue; */
 	background: black;
 	width: 40px;
-	height: 40px;
+	height: 80px;
 	position: absolute;
 }
-
 #H .horizontal{
-	/* background: red; */
 	background: black;
-	width: 40px;
-	height: 40px;
+	width: 90px;
+	height: 20px;
 	position: absolute;
 }
-
 #H .vertical.left {
-	left: 50px;
-	top: 40px;
+	left:0px;
+	top:0px;
 }
 
 #H .vertical.right {
@@ -523,32 +558,57 @@ border-bottom-right-radius:40px;
 	top: 0px;
 }
 
-#H .horizontal.top {
-	top: 0px;
-	left: 0px;
-}
-
-#H .horizontal.bottom {
-	bottom: 0px;
-	left: 0px;
-}
-
 #H .middle {
-	position: absolute;
-	background-color: black;
 	top: 30px;
 	left: 0px;
-	z-index: 99;
-	width: 90px;
-	height: 20px;
 }
 
 /* I */
 
 #I .vertical {
-	/* background: red; */
 	background: black;
-	color: red;
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+#I .horizontal {
+	background-color: black;
+	width: 90px;
+	height: 20px;
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+
+#I .vertical.middle {
+	right: 25px;
+	top: 0px;
+}
+#I .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+#I .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+
+
+
+
+/* J */
+#J_ko{
+
+margin-left: -125px;
+}
+
+#J .vertical {
+	background: black;
 	width: 40px;
 	height: 80px;
 	position: absolute;
@@ -557,48 +617,7 @@ border-bottom-right-radius:40px;
 	z-index: 1;
 }
 
-#I .horizontal {
-	/* color: blue; */
-	background-color: black;
-	width: 90px;
-	height: 20px;
-	position: absolute;
-	float: left;
-  display: inline-block;
-	z-index: 1;
-}
-
-#I .vertical.right {
-	right: 25px;
-	top: 0px;
-}
-
-#I .horizontal.top {
-	top: 0px;
-	left: 0px;
-}
-
-
-#I .horizontal.bottom {
-	bottom: 0px;
-	left: 0px;
-}
-
-/* J */
-
-#J .vertical {
-	/* background: red; */
-	background: black;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	float: left;
-  display: inline-block;
-	z-index: 1;
-}
-
 #J .horizontal {
-	/* background: red; */
 	background: black;
 	width: 40px;
 	height: 40px;
@@ -609,36 +628,29 @@ border-bottom-right-radius:40px;
 }
 
 #J .vertical.right {
+	border-bottom-right-radius:40px;
 	right: 0px;
 	top: 0px;
 }
 
 #J .horizontal.bottom {
 	border-bottom-left-radius:40px;
-	width: 40px;
-	height: 40px;
 	top: 40px;
 	left: 0px;
 	z-index: -1;
 }
 
-#J .horizontal.bottom2 {
-	border-bottom-right-radius:40px;
-	width: 40px;
-	height: 40px;
-	top: 40px;
-	left: 50px;
-	z-index: -1;
-}
+
+
 
 
 /* K */
 
 #K .vertical {
-	/* background: blue; */
+
 	background: black;
 	width: 40px;
-	height: 40px;
+	height: 80px;
 	position: absolute;
 }
 
@@ -646,35 +658,25 @@ border-bottom-right-radius:40px;
 	/* background: red; */
 	background: black;
 	width: 40px;
-	height: 40px;
+	height: 35px;
 	position: absolute;
 }
 
-
-
-#K .horizontal.top {
-	border-top-left-radius:40px;
-	width: 40px;
-	height: 35px;
-	top: 0px;
-	left: 50px;
-	z-index: -1;
-}
-
 #K .vertical.left {
-	height: 80px;
 	left: 0px;
 	top: 0px;
 }
 
+#K .horizontal.top {
+	border-top-left-radius:40px;
+	top: 0px;
+	left: 50px;
+}
 
 #K .horizontal.bottom {
 	border-bottom-left-radius:40px;
-	width: 40px;
-	height: 35px;
 	top: 45px;
 	left: 50px;
-	z-index: -1;
 }
 
 /* L */
@@ -708,32 +710,29 @@ border-bottom-right-radius:40px;
 	left: 50px;
 }
 
+
+
 /* M */
 
-#M .vertical {
-	position: absolute;
-	float: left;
-  display: inline-block;
-	z-index: 1;
-}
-
-#M .horizontal {
-	position: absolute;
-	float: left;
-  display: inline-block;
-	z-index: 1;
-}
-
-#M .vertical.left {
+#M .bottom {
 	background: black;
 	width: 40px;
 	height: 40px;
-	left: 50px;
-	top: 40px;
+	position: absolute;
+	float: left;
+  display: inline-block;
 	z-index: 1;
 }
 
-#M .vertical.right {
+#M .top {
+
+	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
+}
+/* --- */
+#M .top.right {
 	width: 0;
 height: 0;
 border-style: solid;
@@ -743,7 +742,7 @@ border-color: transparent transparent black transparent;
 	top: 0px;
 }
 
-#M .horizontal.top {
+#M .top.left {
 	width: 0;
 height: 0;
 border-style: solid;
@@ -753,50 +752,45 @@ border-color: transparent transparent transparent black;
 	left: 0px;
 }
 
+#M .bottom.right {
+	left: 50px;
+	top: 40px;
+	z-index: 1;
+}
 
-#M .horizontal.bottom {
-	background: black;
-	width: 40px;
-	height: 40px;
+
+#M .bottom.left {
 	bottom: 0px;
 	left: 0px;
 }
+
+
+
 
 /* N */
 
 #N .vertical {
+	background: black;
+	height: 80px;
+	width: 40px;
 	position: absolute;
 	float: left;
   display: inline-block;
 	z-index: 1;
 }
 
-#N .horizontal {
+#N .bottom {
+	background: black;
+	height: 40px;
+	width: 40px;
 	position: absolute;
 	float: left;
   display: inline-block;
 	z-index: 1;
 }
-
-#N .vertical.left {
-	background: black;
-	width: 40px;
-	height: 40px;
-	left: 50px;
-	top: 40px;
-	z-index: 1;
-}
-
-#N .vertical.right {
-	width: 40px;
-	height: 40px;
-	background: black;
-	right: 0px;
-	top: 0px;
-}
-
-#N .horizontal.top {
-	width: 0;
+/* --- */
+#N .top.left {
+width: 0;
 height: 0;
 border-style: solid;
 border-width: 40px 0 0 40px;
@@ -805,75 +799,52 @@ border-color: transparent transparent transparent black;
 	left: 0px;
 }
 
-
-#N .horizontal.bottom {
-	background: black;
-	width: 40px;
-	height: 40px;
-	bottom: 0px;
-	left: 0px;
+#N .vertical.right {
+	right: 0px;
+	top: 0px;
 }
+
+#N .bottom.left {
+	left:0px;
+	top: 40px;
+	z-index: 1;
+}
+
+
 
 /* o */
+
 #O .vertical {
-	background: blue;
 	background: black;
 	width: 40px;
-	height: 40px;
-	position: absolute;
-}
-
-#O .horizontal {
-	background: black;
-	width: 40px;
-	height: 40px;
+	height: 80px;
 	position: absolute;
 }
 
 
-
-#O .horizontal.top {
-border-top-right-radius:40px;
-	width: 40px;
-	height: 40px;
+/* -- */
+#O .vertical.right{
+	border-top-right-radius:40px;
+	border-bottom-right-radius:40px;
 	top: 0px;
 	left: 50px;
-	z-index: -1;
 }
 
-#O .vertical.left {
-	border-top-left-radius:40px;
+#O .vertical.left{
 	border-bottom-left-radius:40px;
-	height: 80px;
-	left: 0px;
-	top: 0px;
-}
-
-#O .vertical.right {
 	border-top-left-radius:40px;
-	border-bottom-left-radius:40px;
-	height: 80px;
-	left: 0px;
 	top: 0px;
+	left: 0px;
 }
 
 
-
-#O .horizontal.bottom {
-border-bottom-right-radius:40px;
-	width: 40px;
-	height: 40px;
-	top: 40px;
-	left: 50px;
-	z-index: -1;
-}
 
 /* P */
 
 #P .vertical {
 	background: black;
 	width: 40px;
-	height: 40px;
+	height: 80px;
 	position: absolute;
 }
 
@@ -883,54 +854,48 @@ border-bottom-right-radius:40px;
 	height: 40px;
 	position: absolute;
 }
-
+/* -- */
 #P .horizontal.top {
 	border-top-right-radius:40px;
-	width: 40px;
-	height: 40px;
 	top: 0px;
 	left: 50px;
-	z-index: -1;
 }
 
 #P .vertical.left {
-
-	height: 80px;
-	left: 0px;
+	left:0px;
 	top: 0px;
 }
+
+
+
+
 
 /* Q */
 #Q .vertical {
 	background: black;
+	height: 80px;
 	width: 40px;
-	height: 40px;
 	position: absolute;
+	float: left;
+  display: inline-block;
+	z-index: 1;
 }
 
-#Q .horizontal {
+#Q .bottom {
 	background: black;
-	width: 40px;
 	height: 40px;
+	width: 40px;
 	position: absolute;
-}
-
-
-
-#Q .horizontal.top {
-border-top-right-radius:40px;
-	width: 40px;
-	height: 40px;
-	top: 0px;
-	left: 50px;
-	z-index: -1;
+	float: left;
+	display: inline-block;
+	z-index: 1;
 }
 
 #Q .vertical.left {
-	border-top-left-radius:40px;
+	border-top-right-radius:40px;
 	border-bottom-left-radius:40px;
 	height: 80px;
-	left: 0px;
+	right: 0px;
 	top: 0px;
 }
 
@@ -942,55 +907,53 @@ border-top-right-radius:40px;
 	top: 0px;
 }
 
-
-
-#Q .horizontal.bottom {
-
-	width: 40px;
-	height: 40px;
-	top: 40px;
-	left: 50px;
+#Q .bottom.right {
+	bottom: 0px;
+	right: 0px;
 	z-index: -1;
 }
 
+
 /* R */
 #R .vertical {
-	width: 0px;
-	height: 0px;
-	position: absolute;
+	background: black;
+		height: 80px;
+		width: 40px;
+		position: absolute;
+		float: left;
+	  display: inline-block;
 }
 
 #R .horizontal {
 	background: black;
-	width: 40px;
-	height: 40px;
-	position: absolute;
+		height: 35px;
+		width: 40px;
+		position: absolute;
+		float: left;
+	  display: inline-block;
 }
 
 #R .vertical.left {
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 40px 0 0 40px;
-border-color: transparent transparent transparent #black;
-	left: 50px;
-	top: 40px;
+top: 0px;
+left: 0px;
 }
 
-#R .vertical.right {
-	background: black;
-	width: 40px;
-	height: 40px;
-	border-top-right-radius: 40px;
+#R .horizontal.top{
+	border-top-right-radius:40px;
 	right: 0px;
 	top: 0px;
+
+}
+
+#R .horizontal.bottom{
+	border-bottom-left-radius:40px;
+	right: 0px;
+	top: 45px;
+
 }
 
 
-#R .horizontal.bottom {
-	bottom: 0px;
-	left: 0px;
-}
+
 
 /* S */
 

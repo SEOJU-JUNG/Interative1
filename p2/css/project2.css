@@ -949,63 +949,43 @@ left: 0px;
 	border-bottom-left-radius:40px;
 	right: 0px;
 	top: 45px;
-
 }
 
 
 
 
 /* S */
-
 #S .vertical {
 	background: black;
-	width: 40px;
+	width: 75px;
 	height: 35px;
-	position: absolute;
+		position: absolute;
+		float: left;
+	  display: inline-block;
 }
 
-#S .horizontal {
-	background: black;
-	width: 40px;
-	height: 35px;
-	position: absolute;
-}
-
-
-#S .vertical.right {
-
+#S .vertical.top {
 	border-top-left-radius:40px;
-	height: 35px;
-	left: 10px;
-	top: 0px;
-}
-
-#S .vertical.left {
-	z-index: 99;
-	right: 0px;
-	top: 0px;
 	border-top-right-radius:40px;
+
+	left: 15px;
+	top: 0px;
+	z-index: 333;
 }
-
-
-#S .horizontal.bottom2 {
-	z-index: 99;
-	right: 50px;
-	top: 45px;
+#S .vertical.bottom {
 	border-bottom-left-radius:40px;
+	border-bottom-right-radius:40px;
+
+	right: 15px;
+	top: 45px;
+	z-index: 333;
 }
 
-#S .horizontal.bottom {
-	border-bottom-right-radius:40px;
-	height: 35px;
-	left: 40px;
-	top: 45px;
-}
 
 /* T */
 
 #T .vertical {
-background: black;
+	background: black;
 	width: 40px;
 	height: 80px;
 	position: absolute;
@@ -1015,7 +995,7 @@ background: black;
 }
 
 #T .horizontal {
-background: black;
+	background: black;
 	width: 90px;
 	height: 20px;
 	position: absolute;
@@ -1023,13 +1003,10 @@ background: black;
   display: inline-block;
 	z-index: 1;
 }
-
-
-#T .vertical.right {
+#T .vertical.middle {
 	right: 25px;
 	top: 0px;
 }
-
 #T .horizontal.top {
 	top: 0px;
 	left: 0px;
@@ -1045,41 +1022,28 @@ background: black;
 	position: absolute;
 }
 
-#U .horizontal {
-	background: black;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-}
-
 #U .vertical.right {
-	border-top-left-radius:40px;
+
 	border-bottom-left-radius:40px;
 	height: 80px;
 	left: 0px;
 	top: 0px;
 }
 
-#U .horizontal.bottom {
-border-bottom-right-radius:40px;
-	width: 40px;
-	height: 40px;
-	top: 40px;
-	left: 50px;
-	z-index: -1;
-}
+#U .vertical.left {
 
-#U .horizontal.bottom3 {
-	width: 40px;
-	height: 40px;
+	border-bottom-right-radius:40px;
+	height: 80px;
+	left: 50px;
 	top: 0px;
-	left: 50px;
-	z-index: 1;
 }
 
 
+/* V */
 
-#V .vertical.right {
+
+
+#V .bottom.right {
 
 width: 0;
 height: 0;
@@ -1091,7 +1055,7 @@ top: 40px;
 position: absolute;
 }
 
-#V .horizontal.bottom {
+#V .bottom.left {
 
 	left: 50px;
 	top: 40px;
@@ -1105,7 +1069,7 @@ border-width: 40px 40px 0 0;
 border-color: black transparent transparent transparent;
 }
 
-#V .horizontal.bottom3 {
+#V .top.right {
 	width: 40px;
 	height: 40px;
 	top: 0px;
@@ -1114,7 +1078,7 @@ border-color: black transparent transparent transparent;
 	background: black;
 }
 
-#V .horizontal.bottom2 {
+#V .top.left  {
 	width: 40px;
 	height: 40px;
 	top: 0px;
@@ -1127,7 +1091,7 @@ border-color: black transparent transparent transparent;
 
 
 /* W */
-#W .vertical.right {
+#W .bottom.right {
 width: 0;
 height: 0;
 width: 0;
@@ -1140,7 +1104,7 @@ top: 40px;
 position: absolute;
 }
 
-#W  .horizontal.bottom {
+#W  .bottom.left {
 left: 50px;
 top: 40px;
 position: absolute;
@@ -1151,7 +1115,7 @@ border-width: 0 40px 40px 0;
 border-color: transparent black transparent transparent;
 }
 
-#W  .horizontal.bottom3 {
+#W .top.right {
 	width: 40px;
 	height: 40px;
 	top: 0px;
@@ -1160,7 +1124,7 @@ border-color: transparent black transparent transparent;
 	background: black;
 }
 
-#W  .horizontal.bottom2 {
+#W .top.left {
 	width: 40px;
 	height: 40px;
 	top: 0px;
@@ -1172,7 +1136,7 @@ border-color: transparent black transparent transparent;
 
 /* X */
 
-#X .vertical.right {
+#X .top.right {
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -1194,7 +1158,7 @@ border-width: 40px 0 0 40px;
 border-color: transparent transparent transparent black ;
 }
 
-#X  .top.left {
+#X .bottom.left {
 	top: 0px;
 	left: 50px;
 	width: 0;
@@ -1204,7 +1168,7 @@ border-width: 0 40px 40px 0;
 border-color: transparent black  transparent transparent;
 }
 
-#X  .top.right {
+#X .top.left{
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -1215,9 +1179,10 @@ border-color: transparent black  transparent transparent;
 	position: absolute;
 }
 
+
+
+
 /* Y */
-
-
 
 #Y .top.right {
 	z-index: 1;
@@ -1231,7 +1196,7 @@ border-bottom-right-radius:40px;
 	z-index: -1;
 }
 
-#Y .bottom.vertical{
+#Y .vertical.middle{
 	z-index: 99;
 	position: absolute;
 	background: black;
@@ -1253,37 +1218,21 @@ border-bottom-right-radius:40px;
 	top: 0px;
 }
 
-#Y .horizontal.bottom {
-border-bottom-right-radius:40px;
-	width: 40px;
-	height: 40px;
-	top: 40px;
-	left: 50px;
-	z-index: -1;
-}
 
 /* z */
 
-#Z .vertical {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-}
-
-#Z .horizontal {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-}
-
-#Z .horizontal.right {
+#Z .top.left {
 	background: black;
+
+
+	width: 40px;
+	height: 40px;
 	top: 0px;
 	left: 0px;
 }
 
 
-#Z .vertical.right {
+#Z .top.right {
 	z-index: 44;
 	width: 0;
 	height: 0;
@@ -1296,7 +1245,7 @@ position: absolute;
 }
 
 
-#Z .horizontal.left {
+#Z .bottom.left {
 z-index: 3;
 left: 0px;
 top: 40px;
@@ -1308,11 +1257,15 @@ border-width: 0 0 40px 40px;
 border-color: transparent transparent black transparent;
 }
 
-#Z .horizontal.bottom {
-	bottom: 0px;
-	left: 50px;
-background: black;
+#Z .bottom.right {
+	position: absolute;
+	background: black;
 
+
+	width: 40px;
+	height: 40px;
+	bottom: 0px;
+	right:0px;
 }
 
 

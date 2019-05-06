@@ -201,17 +201,6 @@ position: absolute;
       position: absolute;
       overflow: hidden;
     }
-    #moblie-img{
-      width: 400px;
-      height: auto;
-      position: absolute;
-      top: 160px;
-      left: 50%;
-      margin-left: -200px;
-      z-index: 2;
-    }
-
-
 
     #Sfmood{
       margin-top: 15px;
@@ -224,48 +213,7 @@ position: absolute;
     font-style: normal;
     }
 
-    /* start loc-container-M */
-    .loc-M{
-      position: absolute;
-      left: 50%;
-    }
-    .loc-1-M{
-      top: 242px;
-margin-left: -49px;
 
-    }
-    .loc-2-M{
-      top: 269px;
-      margin-left: 88px;
-    }
-    .loc-3-M{
-      top: 283px;
-      margin-left: -48px;
-    }
-    .loc-4-M{
-      top: 373px;
-      margin-left: -9px;
-    }
-    .loc-5-M{
-      top: 363px;
-      margin-left: 86px;
-    }
-    .loc-6-M{
-      top: 458px;
-      margin-left: 62px;
-    }
-    .loc-7-M{
-      top: 523px;
-      margin-left: -26px;
-    }
-    .loc-8-M{
-      top: 583px;
-      margin-left: 31px;
-    }
-    .loc-9-M{
-      top: 541px;
-      margin-left: -175px;
-    }
     /* end loc-container-M */
     span{
       color:#13d0f3;
@@ -305,30 +253,88 @@ margin-left: -49px;
 
 
 
-    .FISHERMEN,.RUSSIAN,.TELEGRAPH,.NOB,.CHINA,.UNION,
-    .CIVIC,.MARKET,.ALAMO{
-      color: #0B0A0A;
-      display: inline-block;
-      font-family: acumin-pro, sans-serif;
-      font-weight: 400;
-      font-size: 0.7em;
-      text-decoration: none;
-
-    }
-    /* hover color */
-    .FISHERMEN:hover,.RUSSIAN:hover,.TELEGRAPH:hover,
-    .NOB:hover,.CHINA:hover,.UNION:hover,
-    .CIVIC:hover,.MARKET:hover,.ALAMO:hover{
-      color: #0B0A0A;
-      font-weight: bold;
-      text-decoration: none;
-      text-shadow: none;
-
-      /* color: #dc9265; */
+    #moblie-img{
+      background-image: url("../img/seoju.png");
+      background-size: cover;
+      width: 310px;
+      height: 310px;
+      position: absolute;
+      top: 210px;
+      left: 50%;
+      margin-left: -155px;
+      z-index: 100;
     }
 
+
+    #seoju{
+      /* width: 180px; */
+    font-style: normal;
+    font-size: 3em;
+    margin-bottom: 18px;
+    margin-top: -28px;
+    margin-top: 5px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-style: normal;
+    }
+
+  h3{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    margin-bottom: 18px;
+    margin-top: -28px;
+    line-height: 1.1em;
+    padding: 5px 20px;
+  }
+  .SFmood{
+    color: black;
+    font-style: italic;
+  }
+
+  .Goldtext-M{
+    position: relative;
+    top: 50px;
+    width: 100vw;
+    text-align: center;
+    font-family: acumin-pro, sans-serif;
+    display: inline-block;
+  }
+
+  h4{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    color: #707070;
+  }
+
+
+  .FEB{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+
+  }
+
+  .SP{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #707070;
+  }
+
+
+    .explanation-M{
+      padding-right: 80px;
+      padding-left: 80px;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.2em;
+      line-height: 1.6em;
+      margin-bottom: 20px;
+    }
     /* footer for mobile */
-
     footer {
 
     text-align: center;

@@ -312,7 +312,7 @@ font-size: 13px;
       background-repeat: no-repeat;
       position: absolute;
     }
-/* Title and Navmenu */
+/* Title and Navmenu for mobile */
     #Sfmood{
       margin-top: 15px;
       font-size: 60px;
@@ -361,14 +361,21 @@ font-size: 13px;
     position: absolute;
     }
 
+    .Goldtext-M{
+      position: relative;
+      top: 50px;
+      width: 100vw;
+      text-align: center;
+      font-family: acumin-pro, sans-serif;
+      color: #ef9366;
+      display: inline-block;
+    }
+
     h4{
       font-family: acumin-pro, sans-serif;
       font-weight: 200;
       font-size: 1em;
       color: #707070;
-      /* text-align: center; */
-      /* top:350px;
-      position: absolute; */
     }
     /* location-list */
     .location-list-button{
@@ -396,8 +403,8 @@ font-size: 13px;
       background-color: rgba(255,255,255,0.9);
       z-index: 1000;
       text-transform: uppercase;
-      font-size: 1.3em;
-      line-height: 2.2em;
+      font-size: 1.2em;
+      line-height: 2.5em;
       color: black;
       font-weight: 500;
 
@@ -416,15 +423,7 @@ font-size: 13px;
     }
     /* end location-list */
     /* Gold text for mobile*/
-    .Goldtext-M{
-      position: relative;
-      top: 50px;
-      width: 100vw;
-      text-align: center;
-      font-family: acumin-pro, sans-serif;
-      color: #ef9366;
-      display: inline-block;
-    }
+
     .FISHERMEN-M{
       margin: 0px;
       padding: 0px;

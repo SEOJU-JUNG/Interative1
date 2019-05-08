@@ -1,134 +1,124 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>SF mood</title>
-    <!-- Set the viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link CSS stylesheet -->
-    <link rel="stylesheet" href="css/sfmood.css" />
+  <head>
+      <title>About</title>
+      <!-- Set the viewport -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/main-desktop.css">
+      <link rel="stylesheet" href="css/main-mobile.css">
+      <link rel="stylesheet" href="css/about.css">
 
-  <link rel="stylesheet" href="https://use.typekit.net/cvd7qfl.css">
-  <link rel="stylesheet" href="https://use.typekit.net/xst3edo.css">
-  <link rel="stylesheet" href="https://use.typekit.net/cvd7qfl.css">
+      <link rel="stylesheet" href="https://use.typekit.net/cvd7qfl.css">
+      <link rel="stylesheet" href="https://use.typekit.net/xst3edo.css">
+      <link rel="stylesheet" href="https://use.typekit.net/cvd7qfl.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#location").click(function(){
+          $(".location-list").css({'display':'block'});
+        });
+        $(".location-list-button").click(function(){
+          $(".location-list").css({'display':'none'});
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+       <div id="desktop">
+         <section id="menu-container-desktop">
+           <div id="menu-nav">
+             <div id="sfmood">SF Mood</div>
+
+             <div class="menu map">
+               <span><a class ="map" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood.html">
+                 MAP</a></span>
+               <span><a class ="map" href="https://seoju-jung.github.io/interactive1/sfmood/photographer.html">
+                 PHOTOGRAPHER</a></span>
+               <span><a class ="map" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood.html">
+                 ABOUT</a></span>
+             </div>
+           </div>
+         </section>
+         <section id="content-container-desktop">
+           <br><br><br><br><br><br>
+
+          <div class="seoju-D">SEOJU JUNG</div>
+          <div class="explanation TEXTCOLOR">
+            <h3 class="h3_2">A book<span class="SFmood">"SF mood"</span>'s editor as well as photographer.</h3>
+
+            <h4 class="FEB">FEB 15th - MAY 8th</h4>
+            <h4 class="SP">SP2018</h4>
+            <br>
+            Hi, I am from South Korea and currently attending CCA, California College of the Arts, which is located in the San Francisco Bay area. Whenever I go out and have fun in this city, I've taken photos of some beautiful places here. I really like to use some warm and moody filters when taking photos.
+            <br>
+            I put the address of the locations for each photo so you may visit there and see them in person. I hope you enjoy my photos.
+          </div>
+
+          <div class="img-container">
+            <div class="img-cover">
+              <img class="img-all img1" src="img/book.png" alt="" width="500px">
+            </div>
+            <br><br><br>
+          </div>
+         </section>
+         <section id="footer" class="footer-D">
+           <footer>
+           <p class="footertext">SF Mood © 2019 Seoju Jung. All rights reserved.</p>
+           </footer>
+         </section>
+       </div>
 
 
 
 
-</head>
 
 
+        <!-- show on mobile -->
+        <div id="mobile">
+          <section id="menu-container-moblie">
+            <div id="nav-menu">
+              <div id="Sfmood">SF Mood</div>
+              <div class="menu-M">
+                <span><a class ="map-M" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood.html">MAP</a></span>
+                <span><a class ="map-M" href="photographer.html">PHOTOGRAPHER</a></span>
+                <span><a class ="map-M" href="about.html">ABOUT</a></span>
+              </div>
+            </div>
+          </section>
+          <section id="content-container-moblie">
+            <div class="Goldtext-M2">
+              <!-- LOCATION list-->
+              <div id="location-button">
+                <br><h4 id="location">Last edit May 5th 2019</h4><br><br>
+              </div>
 
-<body>
-    <!-- show by default -->
-    <div id="desktop">
-      <img id="desktop-img" src="map4.png" alt="">
+              <!-- end LOCATION list-->
+              <div id="content-text">
+                <div id="moblie-img"></div>
+                <br><br>
+                <div class="seoju">
+                  SF MOOD
+                </div>
 
+                <h3 class="h3_2">Introducing tourist places in San Francsico Bay Area. <span >
+                </h3>
+                <h4 class="FEB">FEB 15th - MAY 8th</h4>
+                <h4 class="SP">SP2018</h4>
 
-      <div id="Sfmood">SF Mood</div>
-
-      <div class="menu">
-        <span><a class ="map" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood.html">
-          MAP</a></span>
-        <span><a class ="map" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood_photographer.html">
-          PHOTOGRAPHER</span>
-        <span><a class ="map" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood_about.html">
-          ABOUT</span>
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class="loc-container">
-        <div class="loc loc-1">
-            <a class="FISHERMEN" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">④ FISHERMEN’S WHARF</a>
+                <div class="explanation-M2 TEXTCOLOR">
+                    <br>
+This book is introducing some nice places with moody and warm atmosphere which is great to visit if you are obsessed with social media like Instagram. Or this is highly recommended who are interested in taking photos of sites.                     <br><br><br>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="footer">
+            <footer>
+            <p class="footertext">SF Mood © 2019 Seoju Jung. All rights reserved.</p>
+            </footer>
+          </section>
         </div>
-
-        <div class="loc loc-2">
-            <a class="RUSSIAN" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">② RUSSIAN HILL</a>
-        </div>
-
-        <div class="loc loc-3">
-            <a class="TELEGRAPH" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">③ TELEGRAPH HILL</a>
-        </div>
-
-        <div class="loc loc-4">
-            <a class="NOB" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">① NOB HILL</a>
-        </div>
-
-        <div class="loc loc-5">
-            <a class="CHINA" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑨ CHINA TOWN</a>
-        </div>
-
-        <div class="loc loc-6">
-            <a class="UNION" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑦ UNION SQUARE</a>
-        </div>
-
-        <div class="loc loc-7">
-            <a class="CIVIC" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑥ CIVIC CENTER</a>
-        </div>
-
-        <div class="loc loc-8">
-            <a class="MARKET" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑤ MARKET ST</a>
-        </div>
-
-        <div class="loc loc-9">
-            <a class="ALAMO" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑧ ALAMO SQUARE</a>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- show on mobile -->
-    <div id="mobile">
-      <img id="moblie-img" src="map5.png" alt="">
-      <div id="Sfmood">SF Mood</div>
-
-      <div class="menu">
-        <span><a class ="map1" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood.html">
-          MAP</a></span>
-        <span><a class ="map2" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood_photographer.html">
-          PHOTOGRAPHER</a></span>
-        <span><a class ="map3" href="https://seoju-jung.github.io/interactive1/sfmood/sfmood_about.html">
-          ABOUT</a></span>
-      </div>
-
-      <div class="loc-container-M">
-        <div class="loc-M loc-1-M">
-          <a class="FISHERMEN" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">④ FISHERMEN’S WHARF</a>
-        </div>
-        <div class="loc-M loc-2-M">
-          <a class="RUSSIAN" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">② RUSSIAN HILL</a>
-        </div>
-        <div class="loc-M loc-3-M">
-          <a class="TELEGRAPH" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">③ TELEGRAPH HILL</a>
-        </div>
-        <div class="loc-M loc-4-M">
-          <a class="NOB" href ="https://seoju-jung.github.io/interactive1/sfmood/1_nob-hill.html">① NOB HILL</a>
-        </div>
-        <div class="loc-M loc-5-M">
-          <a class="CHINA" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑨ CHINA TOWN</a>
-        </div>
-        <div class="loc-M loc-6-M">
-          <a class="UNION" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑦ UNION SQUARE</a>
-        </div>
-        <div class="loc-M loc-7-M">
-          <a class="CIVIC" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑥ CIVIC CENTER</a>
-        </div>
-        <div class="loc-M loc-8-M">
-          <a class="MARKET" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑤ MARKET ST</a>
-        </div>
-        <div class="loc-M loc-9-M">
-          <a class="ALAMO" href ="https://seoju-jung.github.io/interactive1/sfmood/sfmood4.html">⑧ ALAMO SQUARE</a>
-        </div>
-      </div>
-    </div>
-
-
-
-    <footer>
-      <p class="footertext">SF Mood © 2019 Seoju Jung. All rights reserved.</p>
-    </footer>
-
-</body>
+  </body>
 </html>

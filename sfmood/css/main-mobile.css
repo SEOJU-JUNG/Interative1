@@ -213,3 +213,9 @@
         display: none;
     }
 }
+
+.loc-container,.loc,.loc-9{
+  font-size: 0;
+  opacity: 0;
+  display: none;
+}

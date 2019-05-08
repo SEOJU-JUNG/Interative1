@@ -21,18 +21,17 @@
 }
 
 
-  h3{
+h3{
 
     text-align: left;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     font-size: 2em;
     line-height: 1.1em;
   text-align: left;
   margin: 5px 0px 8px 0px;
-
   }
-  .h3_2{
+  .h3_M{
     font-weight: 200;
     font-style: normal;
     font-size: 2em;
@@ -43,6 +42,16 @@
     text-align: center;
     margin-left: 10px;
     margin-right: : 10px;
+  }
+
+  .h3_D{
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2em;
+
+
+    line-height: 1.2em;
+
   }
 
   .SFmood{
@@ -153,7 +162,7 @@
       margin-top: -28px;
     }
 
-  
+
   .SFmood{
     color: black;
     font-style: italic;

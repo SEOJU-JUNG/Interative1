@@ -7,19 +7,61 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/project2.css" type=>
 	<link rel="stylesheet" href="css/project2_ko.css" type=>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Raleway:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scrollTop = $(window).scrollTop();
+		    var num = document.getElementById('about-page').offsetTop;
+		    if (scrollTop>num) {
+		      $('.nav').addClass('fixed');
+		    }else{
+		      $('.nav').removeClass('fixed');
+		    }
+			});
+		});
+</script>
+
 </head>
 
 <body>
+	<nav class="nav">
+		<div class="bttnplace">
+			<a href="project2.html">
+				<div class="bttn bttn1">
+					<br>HOME
+				</div>
+			</a>
 
+			<a href="#C1">
+				<div class="bttn bttn2">
+						<br>ABOUT
+				</div>
+			</a>
+
+			<a href="#C2">
+					<div class="bttn bttn3 ">
+						<br>NEMO
+					</div>
+				</div>
+			</a>
+		</div>
+	</nav>
 	<section class="screen-container RED">
 		<div id="gray1">
 
+
 		</div>
 		<div class="letter-container">
-<!-- video -->
- <video src="bg.mp4" autoplay loop>
 
-</video>
+<!-- video -->
+ <video src="bg3.mp4" autoplay loop muted>
+	 <source src="bg3.mp4" type="video/mp4">
+
+	 </video>
 
 		<div class="letter-center">
 			<div class="letter-scale">
@@ -407,19 +449,100 @@
 
 		</div>
 	</section>
-	<section class="screen-container">
+
+	<!---about -->
+	<section id="about-page"class="screen-container">
+		<div id="about-text">
+			<h1 id="C1">About</h1>
+			<p><span class="M">M</span>y website introduces abstract English letterforms with CSS code and shows the interaction between Korean letters, Hangul based on a system called "Romanization of Korean" Romaja literally means Roman letters in Korean, and refers to the Latin script. — it refers to writing Korean words using the Latin script: either romanizing individual words in a Korean text or writing an entire Korean text in the Latin script.
+			</p>
+
+			<p>
+				To make the connection, when you hover the English letter it transforms into White Korean letterform, which refers that those two letters have a similar sound to each other.  If a letter returns back as black, not white color, it means it doesn't have any sound match with one single Korean character. For instance, when writing letter 'C' sound or literally just letter 'C', it needs to combine Korean Consonant and vowel to make sound 'C'. But there are some Korean letters that sound similar; A letter 'A', you only need one single Korean letter, either vowel or consonant that makes English, 'A' sound.  </p>
+
+			</p>
+		</div>
 
 	</section>
-	<section class="screen-container RED">
 
+	<section class="screen-container overflowHidden">
+		<div id="gray3">
+
+		</div>
+		<div id="about-text2">
+			<h1 id="C2">About</h1>
+			<p><span class="M">M</span>y website introduces abstract English letterforms with CSS code and shows the interaction between Korean letters, Hangul based on a system called "Romanization of Korean" Romaja literally means Roman letters in Korean, and refers to the Latin script. — it refers to writing Korean words using the Latin script: either romanizing individual words in a Korean text or writing an entire Korean text in the Latin script.
+			</p>
+
+			<p>
+				To make the connection, when you hover the English letter it transforms into White Korean letterform, which refers that those two letters have a similar sound to each other.  If a letter returns back as black, not white color, it means it doesn't have any sound match with one single Korean character. For instance, when writing letter 'C' sound or literally just letter 'C', it needs to combine Korean Consonant and vowel to make sound 'C'. But there are some Korean letters that sound similar; A letter 'A', you only need one single Korean letter, either vowel or consonant that makes English, 'A' sound.  </p>
+
+			</p>
+		</div>
+		<div class="numbers-container">
+			<div class="numbers-scale">
+				<div class="numbers-width">
+					<div class="letter" id="One">
+						<div class="basic left"></div>
+						<div class="basic right"></div>
+					</div>
+					<div class="letter" id="Two">
+						<div class="basic left top"></div>
+						<div class="basic right top"></div>
+						<div class="basic left bottom"></div>
+						<div class="basic right bottom"></div>
+					</div>
+					<div class="letter" id="Three">
+						<div class="basic right"></div>
+						<div class="basic top"></div>
+						<div class="basic bottom"></div>
+					</div>
+					<div class="letter" id="Four">
+						<div class="basic top"></div>
+						<div class="basic bottom"></div>
+						<div class="basic right"></div>
+					</div>
+					<div class="letter" id="Five">
+						<div class="basic left"></div>
+						<div class="basic right"></div>
+						<div class="basic middle"></div>
+						<div class="basic bottom"></div>
+					</div>
+					<div class="letter" id="Six">
+						<div class="basic left"></div>
+						<div class="basic top"></div>
+						<div class="basic bottom"></div>
+					</div>
+					<div class="letter" id="Seven">
+						<div class="basic left"></div>
+						<div class="basic right"></div>
+					</div>
+					<div class="letter" id="Eight">
+						<div class="basic top"></div>
+						<div class="basic bottom"></div>
+					</div>
+					<div class="letter" id="Nine">
+						<div class="basic top left"></div>
+						<div class="basic top right"></div>
+						<div class="basic bottom left"></div>
+					</div>
+					<div class="letter" id="Zero">
+						<div class="basic right"></div>
+						<div class="basic left"></div>
+					</div>
+					<div class="letter" id="Punc">
+						<div class="basic left"></div>
+						<div class="basic right"></div>
+					</div>
+					<div class="letter" id="Ques">
+						<div class="basic top right"></div>
+						<div class="basic left"></div>
+						<div class="basic bottom right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
-	<section class="screen-container">
-
-	</section>
-
-<!-- <div class="letter" id="alt-a">
-
-</div> -->
 
 </body>
 

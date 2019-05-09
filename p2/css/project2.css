@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Raleway', sans-serif;
 }
 
 .screen-container{
@@ -10,7 +11,9 @@ body {
 	position: relative;
 	float: left;
 }
-
+.overflowHidden{
+	overflow: hidden;
+}
 video{
 	position: absolute;
   left: 0;
@@ -21,10 +24,87 @@ video{
   z-index: -1;
 }
 
+/* about */
+#about-text{
+position: absolute;
+left: 15%;
+top: 25%;
+/* margin-left: -500px;
+margin-top: calc(-100px/2); */
+width: 700px;
+height: 100px;
+}
+h1{
+	font-size:3.5em;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+p{
+	font-size:1em;
+	font-weight: 400;
+	line-height: 1.3;
+}
+.M{
+	font-size: 2em;
+}
+
 .RED{
 
 	z-index: -10;
 	/* background-color: red; */
+}
+
+.nav{
+	position: absolute;
+	top: 130vh;
+	right: 20px;
+	/* background: red; */
+	width: 100px;
+	height: 300px;
+	text-align: center;
+}
+.fixed{
+	position: fixed;
+	top: 30vh;
+}
+.bttnplace{
+
+}
+.bttn{
+	text-decoration: none;
+	color: black;
+	font-size: 0.8em;
+	font-weight: 500;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 30px;
+	vertical-align: middle;
+	align-items: center;
+}
+.bttn1{
+	text-decoration: none;
+	border-radius: 50%;
+	background: #FDEB5F;
+}
+.bttn2{
+	background: #5F02F8;
+}
+.bttn3{
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 24px 40px 24px;
+border-color: transparent transparent #02E8B7; transparent;
+
+}
+.tri-bttn{
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 30px 60px 30px;
+border-color: transparent transparent green transparent;
 }
 
 #gray1{
@@ -2421,14 +2501,6 @@ transition-delay: 0ms, 250ms;
 }
 
 
-
-
-
-
-
-
-
-
 /* Alternative A using Multiple Gradients */
 
 #alt-a {
@@ -2438,4 +2510,306 @@ transition-delay: 0ms, 250ms;
     background-size: 200px 140px, 200px 200px;
     background-position: 99px 160px, 0px 0px;
     border-radius: 100px 100px 0px 0px;
+}
+
+/* start number */
+.letter{
+
+}
+#gray3{
+	height: 100vh;
+	width:40vw;
+	background: rgba(0, 0, 0, 0.05);
+	z-index: 11;
+	position: absolute;
+	left: 50%;
+	top: 0;
+
+}
+.numbers-container{
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 20vh;
+	margin-left: -38vw;
+	align-items: center;
+	background-color: white;
+	width: 40vw;
+	height: 100vh;
+
+
+}
+.numbers-scale{
+	transform: scale(0.7);
+	transform-origin: center center;
+}
+/* 1 */
+.basic {
+	/* background: red; */
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+#One .basic.right {
+	background: black;
+	right: 0px;
+	top: 0px;
+	height: 80px;
+}
+
+#One .basic.left {
+	background: black;
+	border-top-left-radius:40px;
+	left: 0px;
+	top: 0px;
+}
+
+/* 2 */
+#Two .basic.left.top {
+	left: 0px;
+	top: 0px;
+	background: black;
+}
+
+#Two .basic.right.top {
+	background: black;
+	right: 0px;
+	top: 0px;
+	border-bottom-right-radius:40px;
+}
+
+#Two .basic.left.bottom {
+	left: 0px;
+	bottom: 0px;
+	background: black;
+	border-top-left-radius: 40px;
+}
+
+#Two .basic.right.bottom {
+	background: black;
+	right: 0px;
+	bottom: 0px;
+}
+
+/* 3 */
+#Three .basic.right {
+	background: black;
+	right: 0px;
+	bottom: 0px;
+	height: 80px;
+}
+
+#Three .basic.top {
+	background: black;
+	left: 0px;
+	top: 0px;
+	height: 35px;
+}
+
+#Three .basic.bottom {
+	background: black;
+	left: 0px;
+	bottom: 0px;
+	height: 35px;
+}
+
+/* 4 */
+#Four .basic.top {
+	background: black;
+	left: 0px;
+	top: 0px;
+	height: 40px;
+	border-top-left-radius: 40px;
+}
+
+#Four .basic.bottom {
+	background: black;
+	left: 0px;
+	top: 50px;
+	height: 14px;
+	width: 90px;
+}
+
+#Four .basic.right {
+	background: black;
+	right: 0px;
+	top: 0px;
+	height: 80px;
+}
+
+/* 5 */
+#Five .basic.left {
+	background: black;
+	left: 0px;
+	top: 0px;
+	height: 35px;
+}
+
+/* #Five .basic.middle {
+	background: black;
+	left: 0px;
+	top: 22px;
+	height: 14px;
+	width: 90px;
+} */
+
+#Five .basic.right {
+	background: black;
+	right: 0px;
+	top: 0px;
+	height: 35px;
+	width: 40px;
+	border-bottom-right-radius: 35px;
+}
+
+#Five .basic.bottom {
+	background: black;
+	right: 0px;
+	bottom: 0px;
+	height: 35px;
+	width: 90px;
+	border-bottom-right-radius: 40px;
+}
+
+/* 6 */
+#Six .basic.left {
+	background: black;
+	left: 0px;
+	top: 0px;
+	height: 80px;
+}
+
+#Six .basic.top {
+	/* background: black; */
+	right: 0px;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 40px 0 0;
+	border-color: black transparent transparent transparent;
+}
+
+#Six .basic.bottom {
+	background: black;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 50%;
+}
+
+/* 7 */
+#Seven .basic.left {
+	background: black;
+	left: 0px;
+	top: 0px;
+	height: 40px;
+}
+
+#Seven .basic.right {
+	background: black;
+	right: 0px;
+	top: 0px;
+	height: 80px;
+}
+
+/* 8 */
+#Eight .basic.top {
+	background: black;
+	left: 0px;
+	top: 0px;
+	width: 90px;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+#Eight .basic.bottom {
+	background: black;
+	left: 0px;
+	bottom: 0px;
+	width: 90px;
+	border-top-right-radius: 40px;
+	border-top-left-radius: 40px;
+}
+/* 9 */
+#Nine .top.left {
+	background: black;
+	left: 0px;
+	top: 0px;
+	height: 35px;
+	border-top-left-radius: 40px;
+}
+
+#Nine .top.right {
+	background: black;
+	right: 0px;
+	top: 0px;
+	height: 80px;
+	border-top-right-radius: 40px;
+}
+#Nine .bottom.left {
+	background: black;
+	left: 0px;
+	bottom: 0px;
+	height: 35px;
+	border-bottom-left-radius: 40px;
+}
+
+/* 0 */
+#Zero .left {
+	background: black;
+	left: 0px;
+	top: 0px;
+	height: 80px;
+	/* border-top-left-radius: 40px; */
+}
+
+#Zero .right {
+	background: black;
+	right: 0px;
+	top: 0px;
+	height: 80px;
+	/* border-top-right-radius: 40px; */
+}
+
+/* Punc */
+#Punc .left {
+	background: black;
+	left: 0px;
+	top: 0px;
+	height: 80px;
+	/* border-top-left-radius: 40px; */
+}
+
+#Punc .right {
+	background: black;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 50%;
+}
+
+/* Ques */
+#Ques .top.right {
+	background: black;
+	right: 0px;
+	top: 0px;
+	height: 35px;
+	border-top-right-radius: 40px;
+}
+#Ques .left {
+	background: black;
+	left: 0px;
+	top: 0px;
+
+	height: 80px;
+
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+
+}
+
+#Ques .bottom.right {
+	background: black;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 50%;
 }

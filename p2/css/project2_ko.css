@@ -19,7 +19,7 @@ margin-left: -125px;
 #A_ko .horizontal2 {
 	width: 90px;
 	height: 40px;
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	position: absolute;
 }
@@ -27,7 +27,7 @@ margin-left: -125px;
 #A_ko .vertical2 {
 	width: 40px;
 	height: 80px;
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	position: absolute;
 }
@@ -83,7 +83,7 @@ margin-left: -125px;
 #B_ko .vertical2 {
 	width: 40px;
 	height: 80px;
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	position: absolute;
 }
@@ -91,7 +91,7 @@ margin-left: -125px;
 #B_ko .horizontal2 {
 	width: 90px;
 	height: 40px;
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	position: absolute;
 }
@@ -234,7 +234,7 @@ margin-left: -125px;
 
 	width: 40px;
 	height: 80px;
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	position: absolute;
 	float: left;
@@ -246,7 +246,7 @@ margin-left: -125px;
 
 	width: 90px;
 	height: 35px;
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	position: absolute;
 	float: left;
@@ -294,7 +294,7 @@ margin-left: -125px;
 }
 
 #E_ko .vertical2 {
-	background: white;
+	background: black;
   border: solid 0.1px black;
 	width: 20px;
 	height: 80px;
@@ -305,7 +305,7 @@ margin-left: -125px;
 }
 
 #E_ko .horizontal2 {
-	background: white;
+	background: black;
   border: solid 0.1px black;
 	width: 60px;
 	height: 40px;
@@ -387,7 +387,7 @@ margin-left: -125px;
 }
  #G_ko .vertical2 {
 	 background: red;
-	 /* background: white;
+	 /* background: black;
    border: solid 0.1px black; */
 	width: 40px;
 	height: 80px;
@@ -399,7 +399,7 @@ margin-left: -125px;
 
 #G_ko .horizontal2 {
 	background: red;
-	/* background: white;
+	/* background: black;
   border: solid 0.1px black; */
 	color: blue;
 	width: 90px;
@@ -436,7 +436,7 @@ margin-left: -125px;
 
 #H_ko .vertical2 {
 	background: red;
-	/* background: white;
+	/* background: black;
 	border: solid 0.1px black; */
 	width: 40px;
 	height: 40px;
@@ -445,7 +445,7 @@ margin-left: -125px;
 
 #H_ko .horizontal2 {
 	background: red;
-	/* background: white;
+	/* background: black;
 	border: solid 0.1px black; */
 	width: 90px;
 	height: 40px;
@@ -493,7 +493,7 @@ margin-left: -125px;
 }
 #I_ko .vertical2 {
 	background: red;
-/* background: white;
+/* background: black;
 border: solid 0.1px black; */
 	width: 40px;
 	height: 80px;
@@ -581,7 +581,7 @@ margin-left: -125px;
 }
 
 #K_ko .vertical2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 40px;
 	height: 80px;
@@ -592,7 +592,7 @@ margin-left: -125px;
 }
 
 #K_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 90px;
 	height: 20px;
@@ -634,7 +634,7 @@ margin-left: -125px;
 }
 
 #L_ko .vertical2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 40px;
 	height: 50px;
@@ -645,7 +645,7 @@ margin-left: -125px;
 }
 
 #L_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 90px;
 	height: 20px;
@@ -710,7 +710,7 @@ margin-left: -125px;
 
 
 #M_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	height: 20px;
 	width: 90px;
@@ -721,7 +721,7 @@ margin-left: -125px;
 }
 
 #M_ko .vertical2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	height: 80px;
 	width: 40px;
@@ -774,7 +774,7 @@ margin-left: -125px;
 }
 
 #N_ko .vertical2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 40px;
 	height: 80px;
@@ -785,7 +785,7 @@ margin-left: -125px;
 }
 
 #N_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 90px;
 	height: 40px;
@@ -828,7 +828,7 @@ margin-left: -125px;
 }
 
  #O_ko .vertical2 {
-	 background: white;
+	 background: black;
 	 border: solid 0.1px black;
 	width: 40px;
 	height: 80px;
@@ -839,7 +839,7 @@ margin-left: -125px;
 }
 
 #O_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 90px;
 	height: 40px;
@@ -877,7 +877,7 @@ margin-left: -125px;
 margin-left: -125px;
 }
 #P_ko .vertical2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 
 	width: 20px;
@@ -889,7 +889,7 @@ margin-left: -125px;
 }
 
 #P_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 90px;
 	height: 30px;
@@ -1004,7 +1004,7 @@ margin-left: -125px;
 }
 
 #R_ko .vertical2 {
-	background: white;
+	background: black;
 	border: solid 1px black;
 		height: 80px;
 		width: 40px;
@@ -1014,7 +1014,7 @@ margin-left: -125px;
 }
 
 #R_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 1px black;
 		height: 35px;
 		width: 40px;
@@ -1091,7 +1091,7 @@ margin-left: -125px;
  }
 
  #T_ko .vertical2 {
-	background: white;
+	background: black;
  	border: solid 0.1px black;
 	width: 40px;
 	height: 80px;
@@ -1103,7 +1103,7 @@ margin-left: -125px;
 }
 
 #T_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	width: 90px;
 	height: 20px;
@@ -1152,7 +1152,7 @@ margin-left: -125px;
  }
 
  #U_ko .vertical2 {
-	 background: white;
+	 background: black;
 	 border: solid 0.1px black;
 
 	width: 40px;
@@ -1165,7 +1165,7 @@ margin-left: -125px;
 }
 
 #U_ko .horizontal2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 
 	width: 90px;
@@ -1202,7 +1202,7 @@ margin-left: -125px;
 margin-left: -125px;
  }
 #V_ko .bottom2.right2B {
-	background: white;
+	background: black;
 	border: solid 1px black;
 	width: 0;
 	height: 0;
@@ -1218,7 +1218,7 @@ margin-left: -125px;
 }
 
 #V_ko .bottom2.left2B {
-	background: white;
+	background: black;
 	border: solid 1px black;
 
 	left: 50px;
@@ -1235,7 +1235,7 @@ margin-left: -125px;
 }
 
 #V_ko .top2.right2 {
-	background: white;
+	background: black;
 	border: solid 1px black;
 	width: 40px;
 	height: 40px;
@@ -1247,7 +1247,7 @@ margin-left: -125px;
 }
 
 #V_ko .top2.left2  {
-	background: white;
+	background: black;
 	border: solid 1px black;
 	width: 40px;
 	height: 40px;
@@ -1271,7 +1271,7 @@ margin-left: -125px;
 	top: 0px;
 	left: 0px;
 	z-index: 1;
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	position: absolute;
 
@@ -1315,7 +1315,7 @@ margin-left: -125px;
 	position: absolute;
 	top: 0px;
 	left: 50px;
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 	z-index: 1;
 
@@ -1394,7 +1394,7 @@ margin-left: -125px;
 }
 
 #Y_ko .top2.right2 {
-	background: white;
+	background: black;
 	border: solid 1px black;
 
 	z-index: 1;
@@ -1412,7 +1412,7 @@ margin-left: -125px;
 }
 
 #Y_ko  .vertical2.middle2{
-	background: white;
+	background: black;
 	border: solid 1px black;
 
 	z-index: 99;
@@ -1428,7 +1428,7 @@ margin-left: -125px;
 }
 
 #Y_ko  .top2.left2 {
-	background: white;
+	background: black;
 	border: solid 1px black;
 
 	position: absolute;
@@ -1451,7 +1451,7 @@ margin-left: -125px;
 }
 
 #Z_ko .top2.left2 {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 
 	width: 40px;
@@ -1497,7 +1497,7 @@ opacity: 0;
 }
 
 #Z_ko .bottom2.right2B {
-	background: white;
+	background: black;
 	border: solid 0.1px black;
 
 	position: absolute;

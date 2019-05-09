@@ -34,10 +34,23 @@ margin-top: calc(-100px/2); */
 width: 700px;
 height: 100px;
 }
+
+#nemo-text{
+	z-index: 99;
+position: absolute;
+left: 52%;
+top: 60%;
+/* margin-left: -500px;
+margin-top: calc(-100px/2); */
+width: 600px;
+height: 100px;
+text
+}
 h1{
 	font-size:3.5em;
 	font-weight: 600;
 	padding-bottom: 10px;
+
 }
 p{
 	font-size:1em;
@@ -74,7 +87,7 @@ p{
 	text-decoration: none;
 	color: black;
 	font-size: 0.8em;
-	font-weight: 500;
+	font-weight: 00;
 	width: 40px;
 	height: 40px;
 	position: relative;
@@ -84,28 +97,29 @@ p{
 	align-items: center;
 }
 .bttn1{
-	text-decoration: none;
+position: absolute;
 	border-radius: 50%;
 	background: #FDEB5F;
+	float: left;
 }
 .bttn2{
-	background: #5F02F8;
-}
-.bttn3{
-	width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 24px 40px 24px;
-border-color: transparent transparent #02E8B7; transparent;
+	position: absolute;
+	background: #02E8B7;
+	float: left;
 
 }
-.tri-bttn{
+.bttn3{
+	position: absolute;
 	width: 0;
 height: 0;
+float: left;
 border-style: solid;
-border-width: 0 30px 60px 30px;
-border-color: transparent transparent green transparent;
+border-width: 0 24px 40px 24px;
+border-color: transparent transparent #FBD9D1; transparent;
 }
+
+
+
 
 #gray1{
 	height: 100vh;
@@ -114,6 +128,10 @@ border-color: transparent transparent green transparent;
 	z-index: -8;
 	position: absolute;
 
+}
+.nemolittle{
+	left:-16px;
+	position: absolute;
 }
 
 .letter-container{
@@ -156,7 +174,9 @@ border-color: transparent transparent green transparent;
 	float: left;
 	margin: 35px;
 }
-
+.bttnplace:hover{
+	font-weight: bold;
+}
 
 /* A */
 #Both-A{
@@ -2531,11 +2551,12 @@ transition-delay: 0ms, 250ms;
 	z-index: 10;
 	left: 50%;
 	top: 20vh;
-	margin-left: -38vw;
+	margin-left: -43vw;
 	align-items: center;
 	background-color: white;
 	width: 40vw;
 	height: 100vh;
+
 
 
 }

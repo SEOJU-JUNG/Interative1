@@ -4,6 +4,10 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+#about-page,#nemo-page{
+	pointer-events: none;
+}
+
 .screen-container{
 	width: 100vw;
 	height: 100vh;
@@ -44,7 +48,7 @@ top: 60%;
 margin-top: calc(-100px/2); */
 width: 600px;
 height: 100px;
-text
+
 }
 h1{
 	font-size:3.5em;
@@ -101,6 +105,53 @@ position: absolute;
 	border-radius: 50%;
 	background: #FDEB5F;
 	float: left;
+}
+
+.bttn1:hover{
+	animation: bigsmall 400ms infinite;
+	transform-origin: 50% 50%;
+}
+@keyframes bigsmall {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.bttn2:hover,.bttn3:hover{
+	animation: shakeprss 400ms infinite;
+	transform-origin: 50% 50%;
+}
+@keyframes shakeprss {
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(-10deg);
+	}
+	75%{
+		transform: rotate(10deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.home:hover {
+	font-weight: bold;
+}
+.bttn2:hover {
+	font-weight: bold;
+}
+.bttn3:hover {
+	font-weight: bold;
 }
 .bttn2{
 	position: absolute;
@@ -174,9 +225,7 @@ border-color: transparent transparent #FBD9D1; transparent;
 	float: left;
 	margin: 35px;
 }
-.bttnplace:hover{
-	font-weight: bold;
-}
+
 
 /* A */
 #Both-A{

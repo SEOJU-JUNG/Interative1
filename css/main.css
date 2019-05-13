@@ -10,7 +10,7 @@ a{
 }
 
 .redkey a:hover{
-  color: red;
+  /* color: red; */
   font-weight: 600;
 
 

@@ -264,6 +264,11 @@ margin-left: 63px;
       top: 541px;
       margin-left: -175px;
     }
+
+    .loc-9{
+      color: white;
+      font-size: 0;
+    }
     /* end loc-container-M */
     span{
       color:#13d0f3;
